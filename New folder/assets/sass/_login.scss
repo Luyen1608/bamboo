@@ -103,12 +103,13 @@
     flex-direction: column;
     gap: 8px;
     .captcha-img-wrap {
+      gap: 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       .captcha-img {
         max-width: 100%;
-        width: 100%;
+        width: 216px;
       }
     }
     a {
@@ -122,8 +123,7 @@
       color: #0184d3;
     }
     .speaker {
-      margin-left: 14px;
-      margin-right: 20px;
+     
       width: 31px;
     }
   }
@@ -252,12 +252,15 @@
   }
   .captcha-input{
     padding-right: 0 !important;
+    overflow: hidden;
+    padding-left: 16px ;
   }
 }
 .login {
   .form {
     .captcha-input{
       padding-right: 0 !important;
+      overflow: hidden;
     }
     &-content {
       width: 548px;
@@ -272,6 +275,9 @@
     }
     .input-wrap ~ .input-wrap{
       margin-top: 30px;
+    }
+    .input-wrap, .captcha-wrap,.row-title{
+      padding: 0;
     }
     
     input{

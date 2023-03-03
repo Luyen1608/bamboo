@@ -103,13 +103,14 @@
   gap: 8px;
 }
 .form .captcha-wrap .captcha-img-wrap {
+  gap: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .form .captcha-wrap .captcha-img-wrap .captcha-img {
   max-width: 100%;
-  width: 100%;
+  width: 216px;
 }
 .form .captcha-wrap a {
   font-weight: 400;
@@ -120,8 +121,6 @@
   color: #0184d3;
 }
 .form .captcha-wrap .speaker {
-  margin-left: 14px;
-  margin-right: 20px;
   width: 31px;
 }
 .form .form-register {
@@ -237,10 +236,13 @@
 }
 .form .captcha-input {
   padding-right: 0 !important;
+  overflow: hidden;
+  padding-left: 16px;
 }
 
 .login .form .captcha-input {
   padding-right: 0 !important;
+  overflow: hidden;
 }
 .login .form-content {
   width: 548px;
@@ -255,6 +257,9 @@
 }
 .login .form .input-wrap ~ .input-wrap {
   margin-top: 30px;
+}
+.login .form .input-wrap, .login .form .captcha-wrap, .login .form .row-title {
+  padding: 0;
 }
 .login .form input {
   background-color: #f3f4f4;
