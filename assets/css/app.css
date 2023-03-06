@@ -5,13 +5,17 @@
 }
 
 .form {
-  margin-bottom: 45px;
+  margin-bottom: 38px;
+  margin-top: 29px;
   /*  .input-wrap ~ .input-wrap {
     margin-top: 20px;
   } */
 }
 .form .has-border {
   border-right: 2px solid rgba(20, 68, 22, 0.55);
+}
+.form .reload-mobile {
+  display: none;
 }
 .form-content {
   background: #f3f4f4;
@@ -65,7 +69,9 @@
   flex-direction: column;
   gap: 8px;
 }
-.form .input-wrap, .form .captcha-wrap, .form .row-title {
+.form .input-wrap,
+.form .captcha-wrap,
+.form .row-title {
   padding: 0 30px;
 }
 .form .label {
@@ -205,7 +211,7 @@
   color: #0184d3;
 }
 .form .submit-wrap {
-  margin-top: 40px;
+  margin-top: 25px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -258,7 +264,9 @@
 .login .form .input-wrap ~ .input-wrap {
   margin-top: 30px;
 }
-.login .form .input-wrap, .login .form .captcha-wrap, .login .form .row-title {
+.login .form .input-wrap,
+.login .form .captcha-wrap,
+.login .form .row-title {
   padding: 0;
 }
 .login .form input {
@@ -283,7 +291,8 @@
   background: linear-gradient(90deg, #ffffff 0%, #8bc63f 20%, #8bc63f 40%, #8bc63f 60%, #8bc63f 80%, #ffffff 100%);
   height: 6px;
 }
-.login .form .input-wrap, .login .form .captcha-wrap {
+.login .form .input-wrap,
+.login .form .captcha-wrap {
   width: 548px;
 }
 .login .form .forget {
@@ -337,8 +346,34 @@
   opacity: 0.7;
 }
 
+/* small mobile */
+@media screen and (max-width: 380px) {
+  .form {
+    margin-top: 18px;
+  }
+  .form .terms ul li {
+    font-size: 10px !important;
+  }
+  .form .terms h2 {
+    font-size: 17px !important;
+  }
+  .form .submit-wrap .submit-btn,
+.form .submit-wrap .log-in-btn {
+    padding: 5px 8px !important;
+    font-size: 13px !important;
+  }
+}
 /* mobile */
 @media screen and (max-width: 767.98px) {
+  .form {
+    margin-top: 20px;
+  }
+  .form input::placeholder, .form textarea::placeholder {
+    font-size: 0;
+  }
+  .form .reaload-mobile {
+    display: block;
+  }
   .form-header {
     height: 70px;
   }
@@ -346,7 +381,8 @@
     font-size: 22px;
   }
   .form .title {
-    font-size: 20px;
+    font-size: 17px;
+    margin-bottom: 15px;
   }
   .form .title p {
     font-size: 14px;
@@ -355,10 +391,16 @@
     height: 120px;
   }
   .form .form-register {
-    flex-direction: column;
+    gap: 5px;
+  }
+  .form .form-register .register-wrap {
+    gap: 8px;
+  }
+  .form .form-register .register-wrap .box {
+    gap: 3px;
   }
   .form .form-register .register-wrap .box p {
-    font-size: 16px;
+    font-size: 10px;
   }
   .form .label {
     font-size: 16px;
@@ -371,7 +413,7 @@
     width: 100%;
   }
   .form .row {
-    margin-left: 12px;
+    margin-left: 0px;
   }
   .form .captcha-wrap .captcha-img-wrap {
     flex-direction: column;
@@ -379,11 +421,23 @@
     justify-content: start;
     gap: 10px;
   }
+  .form .captcha-wrap .d-flex {
+    gap: 10px;
+  }
+  .form .captcha-wrap a {
+    display: none;
+  }
+  .form .captcha-wrap .reload-mobile {
+    display: block !important;
+  }
   .form .terms h2 {
     font-size: 19px;
   }
+  .form .terms ul {
+    margin-left: 20px;
+  }
   .form .terms ul li {
-    font-size: 12px;
+    font-size: 10px;
   }
   .form .submit-wrap {
     gap: 10px;
@@ -399,14 +453,20 @@
   .form .submit-wrap .log-in-btn {
     padding: 5px 10px;
   }
+  .login .form {
+    margin-bottom: 10px;
+  }
   .login .form .row-title {
     width: 350px;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
   .login .form-content {
     width: 300px;
   }
-  .login .form .input-wrap, .login .form .captcha-wrap {
+  .login .form .input-wrap,
+.login .form .captcha-wrap {
     width: 300px;
   }
   .login .form .captcha-wrap a {
@@ -415,11 +475,21 @@
   .login .form .captcha-wrap .captcha-img-wrap {
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: row;
   }
   .login .form .captcha-wrap .captcha-img-wrap .captcha-img {
     width: 100px;
     width: 180px;
+  }
+  .login .form .save {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .login .form .save input {
+    width: 14px;
+    height: 14px;
   }
 }
 /* only 786 */
@@ -435,7 +505,7 @@
     height: 130px;
   }
   .form .row-title {
-    font-size: 18px;
+    font-size: 17px;
   }
   .form .terms h2 {
     font-size: 20px;
@@ -448,6 +518,7 @@
     font-size: 16px;
   }
   .form .title {
+    margin-bottom: 18px;
     font-size: 18px;
   }
   .form input {
@@ -456,27 +527,39 @@
 }
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .form .title {
+    margin-bottom: 18px;
+  }
   .login .form .row-title {
     width: 350px;
-    font-size: 22px;
+    font-size: 21px;
   }
 }
 /* only 1024 */
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .form .captcha-wrap .captcha-img-wrap .captcha-img {
+    width: 155px;
+  }
+  .form-header h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
   .form .label {
     font-size: 14px;
   }
   .form input {
+    padding: 11px 11px;
     font-size: 12px;
   }
   .form .title {
     font-size: 18px;
+    margin-bottom: 22px;
   }
   .form .title p {
     font-size: 14px;
   }
   .form .row-title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .form .terms h2 {
     font-size: 18px;
@@ -484,6 +567,9 @@
   .form .submit-wrap .submit-btn,
 .form .submit-wrap .log-in-btn {
     font-size: 18px;
+  }
+  .login .form .row-title {
+    font-size: 24px;
   }
 }
 /* small pc */
@@ -505,6 +591,7 @@
     font-size: 14px;
   }
   .form .title {
+    margin-bottom: 25px;
     font-size: 20px;
   }
   .form .title p {
@@ -512,6 +599,9 @@
   }
   .form .terms h2 {
     font-size: 20px;
+  }
+  .login .form .row-title {
+    font-size: 26px;
   }
   .login .form input {
     font-size: 14px;
