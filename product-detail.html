@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>product list</title>
+        <title>product detail</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -107,7 +107,7 @@
                     </ul>
                 </div>
             </div>
-           
+
             <div class="categories">
                 <div class="container-al">
                     <ul>
@@ -225,7 +225,7 @@
                                         </div>
                                     </div>
                                     <div class="form__under">
-                                        <button class="filter__submit" type="submit">Áp dụng</button>
+                                        <button class="filter__submit btn" type="submit">Áp dụng</button>
                                     </div>
                                 </form>
                             </aside>
@@ -240,291 +240,205 @@
                                         <a href="#">Đèn tre</a>
                                     </li>
                                     <li class="__item">
-                                        <span>Đèn tròn 2</span>
+                                        <a href="#">Đèn tròn 2</a>
+                                    </li>
+                                    <li class="__item">
+                                        <span>Giỏ Đựng Quần Áo Mây Tre, Kèm Vải Lót, Decor, Có Nắp, Đủ Size</span>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="wrap-product__detail d-flex">
+                                <div class="wrap-product__slider">
 
-                                <div class="wrap__filter-arrange d-flex align-items-center">
-                                    <span>Sắp xếp:</span>
-                                    <select class="form-select">
-                                        <option selected>Giá: Thấp đến cao</option>
-                                        <option value="1">Giá: Cao đến thấp</option>
-                                    </select>
-                                    <div class="wrap-filter-arrange__bt">
-                                        <button class="filter-arrange__bt" type="button">
-                                            <img src="./assets/img/view-rounded.svg" alt="">
-                                        </button>
+                                </div>
+                                <div class="wrap-product__desc">
+                                    <h2 class="product__name">
+                                        MSP02304 - Giỏ Đựng Quần Áo Mây Tre, Kèm Vải Lót, Decor, Có Nắp, Đủ Size
+                                    </h2>
+                                    <p class="product__brand">Thương hiệu: <a href="#">Công ty TNHH Hòa Phát</a></p>
+                                    <div class="p-detail__price mb-4">
+                                        <span class="price">1,725.00 VND</span>
+                                        <p>2,725.00 VND<span class="p-detail__discout">Giảm giá 60%</span></p>
                                     </div>
+                                    <form action="" class="wrap__form-product">
+                                        <div class="choose-product choose__size mb-4">
+                                            <span class="__title">Size</span>
+                                            <div class="option-select option-select--size">
+                                                <label class="option-select__item ">
+                                                    <div class="option-select__inner">
+                                                        <input type="radio" name="tshirt_size" value="s" data-title="">
+                                                        <span class="checkmark --ct-pd">35x75x40cm</span>
+                                                    </div>
+                                                </label>
+                                                <label class="option-select__item ">
+                                                    <div class="option-select__inner">
+                                                        <input type="radio" name="tshirt_size" value="s" data-title="M">
+                                                        <span class="checkmark">M</span>
+                                                    </div>
+                                                </label>
+                                                <label class="option-select__item ">
+                                                    <div class="option-select__inner">
+                                                        <input type="radio" name="tshirt_size" value="s" data-title="L">
+                                                        <span class="checkmark">L</span>
+                                                    </div>
+                                                </label>
+                                                <label class="option-select__item ">
+                                                    <div class="option-select__inner">
+                                                        <input type="radio" name="tshirt_size" value="s"
+                                                            data-title="XL">
+                                                        <span class="checkmark">XL</span>
+                                                    </div>
+                                                </label>
+                                                <label class="option-select__item ">
+                                                    <div class="option-select__inner">
+                                                        <input type="radio" name="tshirt_size" value="s"
+                                                            data-title="XXL">
+                                                        <span class="checkmark">XXL</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="choose-product choose__number">
+                                            <span class="__title">Số lượng</span>
+                                            <div class="wrap-product__quantity">
+                                                <div rel-script="quantity-change" class="quantity product-cotrol__quantity">
+                                                    <a href="#" class="quantity__reduce">-</a> 
+                                                    <input type="number" value="1" max="99" min="1" class="quantity__control"> 
+                                                    <a href="#" class="quantity__augure">+</a>
+                                                </div>
+                                                <span>Sản phẩm</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-link__submit">
+                                            <a href="#" class="filter__submit --bg-white">Thêm giỏ hàng</a>
+                                            <a href="#" class="filter__submit">Mua ngay</a>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 
-                            <div class="l-product__list mt-3">
-                               <article class="l-product__item"> 
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
+                            <div class="product-company__info">
+                                <div class="__company-name d-flex">
+                                    <img src="./assets/img/tp1.png" alt="">
+                                    <div class="__name">
+                                        <h3>Công ty TNHH hòa phát</h3>
+                                        <span>350 sản phẩm</span>
+                                        <a href="#">Xem shop</a>
                                     </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan....</p>
-                                        <a href="#" class="__price">Giá: Liên hệ</a>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                <a href="#">Nhà cung cấp: Công ty TNHH Hòa phát</a>
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item">
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan đèn lồng mây tre đan</p>
-                                        <div class="__price">
-                                            <span class="price-new">VNĐ 250.000</span>
-                                            <span class="price-old">VNĐ 500.000</span>
-                                        </div>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                <a href="#">Nhà cung cấp: Hòa phát </a>
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item"> 
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan....</p>
-                                        <a href="#" class="__price">Giá: Liên hệ</a>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                <a href="#">Nhà cung cấp: Công ty TNHH Hòa phát</a>
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item">
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan đèn lồng mây tre đan</p>
-                                        <div class="__price">
-                                            <span class="price-new">VNĐ 250.000</span>
-                                            <span class="price-old">VNĐ 500.000</span>
-                                        </div>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                Nhà cung cấp: Hòa phát 
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item"> 
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan....</p>
-                                        <a href="#" class="__price">Giá: Liên hệ</a>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                <a href="#">Nhà cung cấp: Công ty TNHH Hòa phát</a>
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item">
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan đèn lồng mây tre đan</p>
-                                        <div class="__price">
-                                            <span class="price-new">VNĐ 250.000</span>
-                                            <span class="price-old">VNĐ 500.000</span>
-                                        </div>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                Nhà cung cấp: Hòa phát 
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item"> 
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan....</p>
-                                        <a href="#" class="__price">Giá: Liên hệ</a>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                <a href="#">Nhà cung cấp: Công ty TNHH Hòa phát</a>
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item">
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan đèn lồng mây tre đan</p>
-                                        <div class="__price">
-                                            <span class="price-new">VNĐ 250.000</span>
-                                            <span class="price-old">VNĐ 500.000</span>
-                                        </div>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                Nhà cung cấp: Hòa phát 
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item"> 
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan....</p>
-                                        <a href="#" class="__price">Giá: Liên hệ</a>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                <a href="#">Nhà cung cấp: Công ty TNHH Hòa phát</a>
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="l-product__item">
-                                    <div class="__thumb">
-                                        <a href="#">
-                                            <img src="./assets/img/product-list-img-01.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="__desc">
-                                        <h3 class="product__item-title">
-                                            <a href="">Đèn tre tròn 2 lớp</a>
-                                        </h3>
-                                        <p>Đèn tre tròn, đèn nấm 2 lớp, đèn treo, đèn lồng mây tre đan đèn lồng mây tre đan</p>
-                                        <div class="__price">
-                                            <span class="price-new">VNĐ 250.000</span>
-                                            <span class="price-old">VNĐ 500.000</span>
-                                        </div>
-                                        <div class="producer__location d-flex mt-2">
-                                            <div class="__inner --producer">
-                                                <img src="./assets/img/mdi_company.svg" alt="">
-                                                Nhà cung cấp: Hòa phát 
-                                            </div>
-                                            <div class="__inner --location">
-                                                <img src="./assets/img/location-on-rounded.svg" alt="">
-                                                Nơi sản xuất: Hà nội
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
+                                </div>
+                                <div class="__info">
+                                    <div class="__item">Năm thành lập: 2019</div>
+                                    <div class="__item">Số điện thoại : 0123-4567-789</div>
+                                    <div class="__item"><a href="#">Website: https://congtytnhhhoaphat.com.vn/</a></div>
+                                    <div class="__item">Địa chỉ: Thành phố Vinh, Tỉnh Nghệ An</div>
+                                </div>
                             </div>
 
-                            <div class="pagination-site d-flex">
-                                <span class="current __item">1</span>
-                                <a href="" class="__item">2</a>
-                                <a href="" class="__item">3</a>
-                                <a href="" class="__item">4</a>
-                                <a href="" class="__item">5</a>
-                                <button class="next __item">
-                                    <img src="./assets/img/down-02.svg" alt="">
-                                </button>
+                            <div class="product-desc__block">
+                                <h3>Thông tin về sản phẩm</h3>
+                                <ul class="wrap-info__product-detail">
+                                    <li class="product-info__row">
+                                        <h4>Danh mục ngành hàng:</h4>
+                                        <div class="__right">
+                                            <a href="#">Đồ bếp</a>
+                                            <img src="./assets/img/right-icon.svg" alt="">
+                                            <a href="#">Đèn tre</a>
+                                            <img src="./assets/img/right-icon.svg" alt="">
+                                            <span>Đèn tròn</span>
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Tên sản phẩm:</h4>
+                                        <div class="__right">
+                                            Giỏ Đựng Quần Áo Mây Tre, Kèm Vải Lót, Decor, Có Nắp, Đủ Size
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Mã sản phẩm:</h4>
+                                        <div class="__right">
+                                            MSP02304
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Thương hiệu:</h4>
+                                        <div class="__right">
+                                            Công ty TNHH Hòa Phát
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Chất liệu:</h4>
+                                        <div class="__right">
+                                            Sợi cói, seagrass, Sợi cói đan lát, Cói
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Kiểu cách:</h4>
+                                        <div class="__right">
+                                            Sang trọng
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Màu sắc:</h4>
+                                        <div class="__right">
+                                            Vàng nâu
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Kích thước sản phẩm:</h4>
+                                        <div class="__right">
+                                            30cm x 45cm x 75cm
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Trọng lượng:</h4>
+                                        <div class="__right">
+                                            120g
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Kích thước đóng gió:</h4>
+                                        <div class="__right">
+                                            45cm x 60cm x 100cm
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Đơn vị tính:</h4>
+                                        <div class="__right">
+                                            Gói
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Điều kiện sử dụng:</h4>
+                                        <div class="__right">
+                                            Môi trường trong nhà
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Tiêu chuẩn sản xuất: </h4>
+                                        <div class="__right">
+                                            ISO 22156:2004
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Sản phẩm bán tối thiểu:</h4>
+                                        <div class="__right">
+                                            10 sản phẩm
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Nơi sản xuất: </h4>
+                                        <div class="__right">
+                                            Thành phố Vinh, Tỉnh Nghệ An
+                                        </div>
+                                    </li>
+                                    <li class="product-info__row">
+                                        <h4>Quốc gia</h4>
+                                        <div class="__right">
+                                            Việt Nam
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
