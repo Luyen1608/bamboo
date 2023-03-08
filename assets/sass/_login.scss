@@ -109,10 +109,10 @@
     flex-direction: column;
     gap: 8px;
     .captcha-img-wrap {
-      gap: 10px;
+      gap: 15px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      //justify-content: space-between;
       .captcha-img {
         max-width: 100%;
         width: 216px;
@@ -499,7 +499,7 @@
         margin-left: 20px;
 
         li {
-          font-size: 10px;
+          font-size: 12px;
         }
       }
     }
@@ -566,6 +566,14 @@
 }
 
 /* only 786 */
+@media screen and (max-width: 768px) {
+  .form{
+    .has-border{
+      border: none;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023.99px) {
   .form {
     &-header {
@@ -627,6 +635,11 @@
     .captcha-wrap{
       a{
         font-size: 16px;
+      }
+      .captcha-img-wrap{
+        .captcha-img{
+          max-width: 163px;
+        }
       }
     }
   }

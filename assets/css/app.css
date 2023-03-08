@@ -109,10 +109,9 @@
   gap: 8px;
 }
 .form .captcha-wrap .captcha-img-wrap {
-  gap: 10px;
+  gap: 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .form .captcha-wrap .captcha-img-wrap .captcha-img {
   max-width: 100%;
@@ -453,7 +452,7 @@
     margin-left: 20px;
   }
   .form .terms ul li {
-    font-size: 10px;
+    font-size: 12px;
   }
   .form .submit-wrap {
     gap: 10px;
@@ -512,6 +511,11 @@
   }
 }
 /* only 786 */
+@media screen and (max-width: 768px) {
+  .form .has-border {
+    border: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023.99px) {
   .form-header {
     height: 80px;
@@ -557,6 +561,9 @@
   }
   .form .captcha-wrap a {
     font-size: 16px;
+  }
+  .form .captcha-wrap .captcha-img-wrap .captcha-img {
+    max-width: 163px;
   }
   .login .form .row-title {
     width: 350px;
