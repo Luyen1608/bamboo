@@ -4,7 +4,7 @@
   .has-border {
     border-right: 2px solid rgba(20, 68, 22, 0.55);
   }
-  .reload-mobile{
+  .reload-mobile {
     display: none;
   }
   &-content {
@@ -409,11 +409,15 @@
 @media screen and (max-width: 767.98px) {
   .form {
     margin-top: 20px;
-    input::placeholder, textarea::placeholder{
+    input::placeholder,
+    textarea::placeholder {
       font-size: 0;
     }
-    .reaload-mobile{
+    .reload-mobile {
       display: block;
+    }
+    .row-title{
+      font-size: 15px;
     }
     &-header {
       height: 70px;
@@ -438,7 +442,7 @@
         .box {
           gap: 3px;
           p {
-            font-size: 10px;
+            font-size: 13px;
           }
         }
       }
@@ -459,22 +463,27 @@
       margin-left: 0px;
     }
     .captcha-wrap {
+      a{
+        font-size: 14px;
+      }
       .captcha-img-wrap {
         flex-direction: column;
         align-items: start;
         justify-content: start;
         gap: 10px;
       }
-      .d-flex{
+      .d-flex {
         gap: 10px;
       }
-      a{
+      a {
         display: none;
       }
-      .reload-mobile{
+      .reload-img{
         display: block !important;
       }
-      
+      .reload-mobile {
+        display: block !important;
+      }
     }
     .terms {
       h2 {
@@ -534,11 +543,11 @@
           }
         }
       }
-      .save{
+      .save {
         display: flex;
         align-items: center;
         gap: 3px;
-        input{
+        input {
           width: 14px;
           height: 14px;
         }
@@ -563,6 +572,15 @@
     .row-title {
       font-size: 17px;
     }
+    .form-register {
+      .register-wrap {
+        .box {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
     .terms {
       h2 {
         font-size: 20px;
@@ -585,15 +603,22 @@
       font-size: 15px;
     }
   }
-  
 }
 
 /* tablet */
 
 @media screen and(min-width:768px) and (max-width: 1023.98px) {
   .form {
+    .row-title{
+      font-size: 16px;
+    }
     .title {
       margin-bottom: 18px;
+    }
+    .captcha-wrap{
+      a{
+        font-size: 16px;
+      }
     }
   }
   .login {
@@ -610,9 +635,21 @@
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
   .form {
     .captcha-wrap {
+      a{
+        font-size: 16px;
+      }
       .captcha-img-wrap {
         .captcha-img {
           width: 155px;
+        }
+      }
+    }
+    .form-register {
+      .register-wrap {
+        .box {
+          p {
+            font-size: 15px;
+          }
         }
       }
     }
@@ -628,6 +665,9 @@
     input {
       padding: 11px 11px;
       font-size: 12px;
+    }
+    .row-title{
+      font-size: 16px;
     }
     .title {
       font-size: 18px;
@@ -651,9 +691,9 @@
       }
     }
   }
-  .login{
-    .form{
-      .row-title{
+  .login {
+    .form {
+      .row-title {
         font-size: 24px;
       }
     }
@@ -681,6 +721,9 @@
     input {
       font-size: 14px;
     }
+    .row-title{
+      font-size: 18px;
+    }
     .title {
       margin-bottom: 25px;
       font-size: 20px;
@@ -693,10 +736,24 @@
         font-size: 20px;
       }
     }
+    .form-register {
+      .register-wrap {
+        .box {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .captcha-wrap{
+      a{
+        font-size: 18px;
+      }
+    }
   }
   .login {
     .form {
-      .row-title{
+      .row-title {
         font-size: 26px;
       }
       input {

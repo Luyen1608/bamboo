@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>News</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
   <body>
-    <div class="wrapper login">
+    <div class="wrapper">
       <div class="pre-header">
         <div class="container-al">
           <div class="pre-header-contact">
@@ -226,143 +226,100 @@
           </ul>
         </div>
       </div>
-      <div class="form">
+
+      <div class="news-wrap">
         <div class="container-al">
-            <div class="row-title">
-                Đăng nhập vào tài khoản của bạn
-                <div class="line"></div>
+          <div class="row">
+            <div class="col-lg-3 left">
+              <div class="news-menu">
+                <h2>Thông tin thị trường quốc tế</h2>
+                <ul>
+                  <li><a href="">Thị trường Mỹ</a></li>
+                  <li><a href="#">Thị trường Nhật Bản</a></li>
+                  <li><a href="">Thị trường Trung Quốc</a></li>
+                  <li><a href="">Thị trường EU</a></li>
+                </ul>
+              </div>
+              <div class="news-menu">
+                <h2>Thư viện kiến thức</h2>
+                <ul>
+                  <li><a href="">Thương mại điện tử</a></li>
+                  <li><a href="">Hợp đồng mua bán quốc tế</a></li>
+                  <li><a href="">Giao nhận, vận tải, bảo hiểm</a></li>
+                  <li><a href=""> Thanh toán quốc tế</a></li>
+                </ul>
+              </div>
+              <div class="news-menu">
+                <h2>Thông tin khác</h2>
+                <ul>
+                  <li><a href="">Tin tức</a></li>
+                  <li><a href="">Hội chợ triển lãm</a></li>
+                  <li><a href="">Danh sách các nhà nhập khẩu</a></li>
+                  <li><a href=""> Terms and conditions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href=""> Site map</a></li>
+                </ul>
+              </div>
+              <div class="news-menu">
+                <h2>Giới thiệu tổng quan sàn</h2>
+                <ul>
+                  <li><a href="">Giới thiệu chung</a></li>
+                </ul>
+              </div>
             </div>
-          <div class="form-content">
-            <div class="input-wrap">
-                <p class="label">Tên tài khoản <span>*</span></p>
-                <input type="text" placeholder="Nhập tên tài khoản của bạn tại đây">
-            </div>
-            <div class="input-wrap">
-                <p class="label">
-                    Mật khẩu <span>*</span>
-                </p>
-                <input type="text" placeholder="Nhập mật khẩu của bạn tại đây">
-            </div>
-            <div class="captcha-wrap col-lg-12">
-                <div class="captcha-img-wrap">
-                  <img
-                    src="./assets/img/securimage_show 1.svg"
-                    class="captcha-img"
-                    alt=""
-                  />
-                  <a href="#" class="reload-img">
-                    <img src="./assets/img/circle.svg" class="reload-img" alt="">
-                  </a>
-                  <img
-                    src="./assets/img/speaker.svg"
-                    alt=""
-                    class="speaker"
-                  />
+            <div class="col-lg-9 right">
+              <div class="breadcump-wrap">
+                <div class="breadcump-item">
+                  <h2>Tin tức</h2>
+                  <div class="icon">
+                    <img src="./assets/img/breadcump-icon.svg" alt="" />
+                  </div>
+                  <h3 class="news-title">Thông tin thị trường quốc tế</h3>
+                </div>
+                <div class="search-bar">
                   <input
                     type="text"
-                    placeholder="Nhập mã xác nhận"
-                    class="captcha-input"
+                    id="header-search"
+                    placeholder="Tìm kiếm sản phẩm"
                   />
+                  <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
                 </div>
-
               </div>
-            <div class="forget">
-                <a href="#">Quên mật khẩu</a>
-                <div class="save">
-                  <input type="checkbox">
-                    <span>Lưu mật khẩu</span>
+              <div class="news-list">
+                <div class="news-item">
+                  <div class="news-item-img">
+                    <img src="./assets/img/bamboo.jpg" alt="" />
+                  </div>
+                  <div class="d-flex gap-2 flex-column ">
+                    <div class="news-item-title">
+                      Chính phủ ban hành Nghị định quy định Chức năng, nhiệm vụ
+                      và cơ cấu tổ chức mới của Bộ Công Thương
+                    </div>
+                    <div class="news-item-info">
+                      <div class="news-item-date">
+                        <img src="./assets/img/date-icon.svg" alt="" />
+                        Ngày: 08/12/2022 11:06
+                      </div>
+                      <div class="news-item-view">
+                        <img src="./assets/img/eye-icon.svg" alt="" />
+                        Lượt xem: 103
+                      </div>
+                    </div>
+                    <div class="news-item-content">
+                      Phó Thủ tướng Thường trực Chính phủ Phạm Bình Minh vừa ký
+                      Nghị định 96/2022/NĐ-CP ngày 29/11/2022 quy định chức
+                      năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Công
+                      Thương.
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="submit-wrap">
-                <div class="login-btn">
-                    Đăng nhập
-                </div>
-                <a href="register_seller.html" class="register-btn">Tạo tài khoản</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-al">
-          <div class="left flex-column d-flex">
-            <div class="logo-list">
-              <img src="./assets/img/logo-ref1.png" alt="" />
-              <img src="./assets/img/Oxfam_logo_vertical 1.png" alt="" />
-              <img src="./assets/img/logo-ref3.png" alt="" />
-              <img src="./assets/img/ft-vcci.png" alt="" />
-            </div>
-            <div class="d-flex align-items-center" style="gap: 10px">
-              <img src="./assets/img/logo2.png" class="logo-2" alt="" />
-              <p class="footer-text m-width">
-                Dự án Phát triển bền vững và toàn diện chuỗi giá trị nghêu và
-                tre tại Việt Nam
-              </p>
-            </div>
-            <div class="social-list">
-              <a href="">
-                <img src="./assets/img/mdi_instagram.svg" alt="" />
-              </a>
-              <a href=""
-                ><img src="./assets/img/ic_baseline-facebook.svg" alt=""
-              /></a>
-              <a href=""
-                ><img src="./assets/img/mdi_google-plus.svg" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="right">
-            <div class="list">
-              <h2>Hướng dẫn mua bán</h2>
-              <ul>
-                <li><a class="footer-text">Hướng dẫn cho người mua</a></li>
-                <li>
-                  <a class="footer-text">Hướng dẫn cho người bán</a>
-                </li>
-                <li>
-                  <a class="footer-text">Bảo mật thông tin</a>
-                </li>
-              </ul>
-            </div>
-            <div class="list">
-              <h2>Viện Tin học Doanh nghiệp (VCCI-ITB)</h2>
-              <ul>
-                <li>
-                  <img src="./assets/img/map.svg" alt="" />
-                  <p class="footer-text">
-                    Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
-                  </p>
-                </li>
-                <li>
-                  <img src="./assets/img/Phone.svg" alt="" />
-                  <p class="footer-text">Điện Thoại: 123-4567-890</p>
-                </li>
-                <li>
-                  <img src="./assets/img/Message.svg" alt="" />
-                  <p class="footer-text">Email: contact@itb.com.vn</p>
-                </li>
-              </ul>
-            </div>
-            <div class="returns">
-              <div class="returns-link">
-                <p class="text">Liên kết website</p>
-                <i class="fa-solid fa-chevron-down"></i>
-                <div class="option-list">
-                  <div class="option-item">Liên kết website</div>
-                  <div class="option-item">lorem1</div>
-                  <div class="option-item">lorem2</div>
-                </div>
-              </div>
-              <div class="returns-visit">
-                <p class="text">Lượt truy cập</p>
-                <p class="text number">7398898</p>
-              </div>
-              <div class="dangky-img-wrap">
-                <img src="./assets/img/dk.svg" alt="" class="dangky-img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   </body>
   <script
