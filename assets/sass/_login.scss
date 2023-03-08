@@ -437,6 +437,8 @@
     }
     .form-register {
       gap: 5px;
+      align-items: flex-start;
+      flex-direction: column;
       .register-wrap {
         gap: 8px;
         .box {
@@ -527,6 +529,9 @@
       .input-wrap,
       .captcha-wrap {
         width: 300px;
+      }
+      input{
+        padding: 8px 12px;
       }
       .captcha-wrap {
         a {
