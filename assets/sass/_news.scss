@@ -39,6 +39,7 @@
   }
 }
 .news-wrap {
+  margin-top: 33px;
   .news-menu {
     h2 {
       background: linear-gradient(90deg, #8bc63f 0%, #ffffff 100%);
@@ -78,6 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
   }
   .breadcump-item {
     display: flex;
@@ -160,6 +162,7 @@
 /* mobile */
 @media screen and (max-width: 767px) {
   .news-wrap {
+    margin-top: 15px;
     .row{
       flex-direction: column-reverse;
     }
@@ -252,6 +255,7 @@
     }
   }
   .news-wrap {
+    margin-top: 20px;
     .news-menu {
       h2 {
         font-size: 16px;
@@ -292,6 +296,7 @@
   .search-bar {
   }
   .news-wrap {
+    margin-top: 25px;
     .news-menu {
       h2 {
         font-size: 14px;
@@ -330,6 +335,7 @@
   .search-bar {
   }
   .news-wrap {
+    margin-top: 30px;
     .news-menu {
       h2 {
         font-size: 17px;
@@ -351,6 +357,7 @@
     }
 
     .breadcump-wrap {
+      gap: 30px;
       h2 {
         font-size: 20px;
       }
