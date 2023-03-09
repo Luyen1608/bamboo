@@ -550,11 +550,16 @@
         .captcha-img-wrap {
           align-items: center;
           flex-wrap: wrap;
-          justify-content: space-between;
           flex-direction: row;
+          gap: 5px;
           .captcha-img {
-            width: 100px;
-            width: 180px;
+            width: 140px;
+          }
+          .reload-img{
+            width: 24px;
+          }
+          .speaker{
+            width: 24px;
           }
         }
       }
