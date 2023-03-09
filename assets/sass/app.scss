@@ -73,6 +73,9 @@ img {
 .pagination-site .__item.next {
   background-color: transparent;
   border-color: #395319;
+  img{
+    rotate: 90deg;
+  }
 }
 
 .pagination-site .__item.next:hover {
