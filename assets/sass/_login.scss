@@ -118,6 +118,9 @@
         width: 216px;
       }
     }
+    .captcha-input{
+      flex: 1;
+    }
     a {
       font-weight: 400;
       font-size: 20px;
@@ -245,7 +248,7 @@
     .log-in-btn {
       /* Background/1 */
       cursor: pointer;
-
+      border: 1px solid #303030;
       background: #ffffff;
       border-radius: 6px;
       padding: 11px 34px;
@@ -259,6 +262,7 @@
     padding-right: 0 !important;
     overflow: hidden;
     padding-left: 16px;
+    flex: 1;
   }
 }
 .login {
@@ -338,6 +342,7 @@
       width: 100%;
       padding: 12px 32px;
       font-weight: 600;
+      border: 1px solid #303030;
       font-size: 20px;
       line-height: 32px;
       /* identical to box height, or 160% */
@@ -388,7 +393,7 @@
     .terms {
       ul {
         li {
-          font-size: 10px !important;
+          font-size: 12px !important;
         }
       }
       h2 {
@@ -400,6 +405,7 @@
       .log-in-btn {
         padding: 5px 8px !important;
         font-size: 13px !important;
+        border: 1px solid #303030;
       }
     }
   }
