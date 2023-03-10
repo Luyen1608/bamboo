@@ -34,6 +34,7 @@
     justify-content: center;
     padding: 4px 10px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .filter__tags li span {
@@ -199,8 +200,8 @@
 }
 
 .wrap__filter-arrange .form-select {
-    padding: 12px 16px;
-    font-size: 20px;
+    padding: 11px 16px;
+    font-size: 22px;
     font-weight: 600;
     border-radius: 8px;
     max-width: 250px;
@@ -383,13 +384,20 @@
     border-color: #395319;
 }
 
-.pagination-site .__item.next:hover {
-    opacity: .7;
+.pagination-site .__item.next svg {
+    transform: rotate(-90deg);
+    transition: 0.2s;
 }
 
-.pagination-site .__item.next img {
-    transform: rotate(-90deg);
+.pagination-site .__item.next:hover {
+    background-color: #395319;
+    color: #fff;
+    opacity: 1;
 }
+
+.pagination-site .__item:hover svg path {
+    fill: #fff;
+} 
 
 
 /*=== style product detail ===*/
@@ -412,6 +420,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 .product__brand {
@@ -564,6 +573,8 @@
     background: #91EA9A1A;
     padding: 20px 26px 20px 20px;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
     align-items: center;
 }
 
@@ -594,6 +605,7 @@
     padding: 5px 14px;
     border-radius: 4px;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .product-company__info .__info {
@@ -607,13 +619,94 @@
 
 .product-company__info .__info  .__item {
     width: 50%;
-    padding-right: 30px;
+    padding-right: 10px;
     font-size: 14px;
     color: #303030;
+    min-width: 300px;
 }
 
 .product-company__info .__info  .__item a {
     color: #303030;
+}
+
+.product-desc__block {
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.product-desc__block h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 26px;
+    color: #303030;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.product-info__row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+
+.product-info__row:last-child {
+    margin-bottom: 0px;
+}
+
+.product-info__row h4 {
+    width:22%;
+    max-width: 250px;
+    min-width: 210px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 0px;
+}
+
+.product-info__row .__right {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+}
+
+.product-desc__block .__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.product-info__row .__right a {
+    color: #0184D3;
+}
+
+.product__slider-item {
+    border: 0.5px solid #DDDFE3;
+    border-radius: 10px;
+}
+
+.pr-slider-thumb .swiper-slide {
+    border: 0.5px solid #DDDFE3;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.1;
+    padding: 4px;
+}
+
+.pr-slider-thumb .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+
+.product__slider-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 
@@ -630,8 +723,8 @@
         font-size: 16px;
     }
     .wrap__filter-arrange .form-select {
-        font-size: 16px;
-        padding: 10px 16px;
+        font-size: 18px;
+        padding: 8px 16px;
         max-width: 210px;
         min-width: 200px;
     }
@@ -673,6 +766,36 @@
     .pagination-site {
         gap: 12px;
     }
+    .product-company__info .__company-name {
+        padding-right: 30px;
+    }
+    .product-company__info .__info {
+        padding-left: 30px;
+    }
+    .product-company__info .__info .__item {
+        width: auto;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .product-cat__title {
+        font-size: 20px;
+    }
+    .l-product__item {
+        padding:14px 14px;
+    }
+    .producer__location {
+        gap: 3px;
+    }
+    .producer__location .__inner {
+        font-size: 11px;
+    }
+    .product-company__info .__company-name img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -698,6 +821,16 @@
     }
     .breadcrumb-site .__item {
         font-size: 14px;
+    }
+    .product-company__info .__company-name {
+        padding-right: 20px;
+        min-width: 300px;
+    }
+    .product-company__info .__info {
+        padding-left: 20px;
+    }
+    .product-company__info .__info {
+        row-gap: 12px;
     }
 }
 
