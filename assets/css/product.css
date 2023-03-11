@@ -659,9 +659,9 @@
     max-width: 250px;
     min-width: 210px;
     font-size: 16px;
-    font-weight: 400;
     color: #727272;
     margin-bottom: 0px;
+    font-weight: 500;
 }
 
 .product-info__row .__right {
