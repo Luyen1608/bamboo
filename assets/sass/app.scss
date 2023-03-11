@@ -35,6 +35,41 @@ img {
 .container-al {
   padding: 0 8.8%;
 }
+/* quantity */
+.product-cotrol__quantity {
+  padding: 9px 0px;
+  border: 1px solid #DDDFE3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.product-cotrol__quantity a {
+  color: #959EAD;
+  text-align: center;
+  padding: 0px 18px;
+  border-right: 1px solid #DDDFE3;
+}
+
+.product-cotrol__quantity a.quantity__augure {
+  border-right: 0px;
+  border-left: 1px solid #DDDFE3;
+}
+
+.quantity__control {
+  width: 50px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #303030;
+  pointer-events: none;
+  background-color: transparent;
+  flex: 1;
+  padding: 0px 0px 0px 14px;
+}
+/* quantity */
 /* pagination */
 .pagination-site {
   padding: 38px 0px;
