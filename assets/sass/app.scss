@@ -3,9 +3,9 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
-@import 'login.scss';
-@import 'news.scss';
-@import 'cart.scss';
+@import "login.scss";
+@import "news.scss";
+@import "cart.scss";
 ul,
 h1,
 h2,
@@ -38,22 +38,22 @@ img {
 /* quantity */
 .product-cotrol__quantity {
   padding: 9px 0px;
-  border: 1px solid #DDDFE3;
+  border: 1px solid #dddfe3;
   border-radius: 4px;
   display: flex;
   align-items: center;
 }
 
 .product-cotrol__quantity a {
-  color: #959EAD;
+  color: #959ead;
   text-align: center;
   padding: 0px 18px;
-  border-right: 1px solid #DDDFE3;
+  border-right: 1px solid #dddfe3;
 }
 
 .product-cotrol__quantity a.quantity__augure {
   border-right: 0px;
-  border-left: 1px solid #DDDFE3;
+  border-left: 1px solid #dddfe3;
 }
 
 .quantity__control {
@@ -88,7 +88,7 @@ img {
   align-items: center;
   justify-content: center;
   outline: none;
-  transition: .2s;
+  transition: 0.2s;
   border-radius: 8px;
   border: 1px solid transparent;
 }
@@ -108,13 +108,20 @@ img {
 .pagination-site .__item.next {
   background-color: transparent;
   border-color: #395319;
-  img{
+  transtion: 0.2s ease;
+  i{
     rotate: 90deg;
+  }
+  &:hover {
+    background-color: #395319;
+    i{
+      color: #fff;
+    }
   }
 }
 
 .pagination-site .__item.next:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .pagination-site .__item.next img {
@@ -288,6 +295,7 @@ a:hover {
     flex: 1;
     height: 100%;
     input {
+      max-width: inherit;
       padding-left: 16px;
       color: #000;
       background: rgba(227, 243, 228, 0.78);
@@ -445,7 +453,7 @@ a:hover {
       border: 1px solid #72727271;
       background-color: #fff;
       left: calc(100% + 20px);
-      
+
       top: -3%;
       padding: 10px;
       border-radius: 8px;
@@ -460,7 +468,7 @@ a:hover {
         transition: 0.2s ease;
         width: fit-content;
         padding-left: 0;
-        span{
+        span {
           font-weight: 500;
         }
       }
@@ -1626,10 +1634,10 @@ a:hover {
 /* only 768 */
 
 @media screen and (min-width: 768px) and (max-width: 790px) {
-  .categories{
-    ul{
-      .lv2-sub-dropdown{
-        &.mobile{
+  .categories {
+    ul {
+      .lv2-sub-dropdown {
+        &.mobile {
           left: unset;
           right: calc(100% + 10px);
         }
@@ -1637,7 +1645,6 @@ a:hover {
     }
   }
 }
-
 
 /* large pc */
 @media screen and (min-width: 1600px) {

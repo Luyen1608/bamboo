@@ -1,5 +1,13 @@
 .cart-content {
   margin-top: 30px;
+  .cart-section-content{
+    max-height: 0;
+    transition: 0.2s ease;
+    overflow: hidden;
+    &.active{
+      max-height: fit-content;
+    }
+  }
   .cart-section-heading {
     margin-bottom: 15px;
     background: linear-gradient(90deg, #cfe8b0 0%, #ffffff 100%);
@@ -16,6 +24,9 @@
       font-weight: 500;
       font-size: 22px;
       line-height: 24px;
+    }
+    .collapse-btn{
+      cursor: pointer;
     }
     i {
       font-size: 10px;
@@ -100,9 +111,6 @@
           font-weight: 600;
           font-size: 20px;
           line-height: 32px;
-
-          text-decoration-line: underline;
-
           color: #de3618;
         }
         input {
@@ -123,9 +131,25 @@
     border: 1px solid #dddfe3;
     border-radius: 12px;
     &-header {
+      .cart-detail-collapse-btn {
+        rotate: 0deg;
+        transition: 0.2s ease;
+        &.active {
+          rotate: 180deg;
+        }
+      }
       i {
+        rotate: 0deg;
+        cursor: pointer;
+        transition: 0.2s;
         color: #de3618;
         font-size: 11px;
+        &:hover {
+          opacity: 0.8;
+        }
+        &.active{
+          rotate: 180deg;
+        }
       }
       h2 {
         font-weight: 600;
@@ -140,6 +164,14 @@
         /* identical to box height, or 150% */
 
         color: rgba(48, 48, 48, 0.8);
+      }
+    }
+    &-content{
+      max-height: 0px;
+      overflow: hidden;
+      transition: 0.2s;
+      &.active{
+        max-height: 500px;
       }
     }
     .cart-detail-row {
@@ -265,7 +297,7 @@
       }
     }
     .captcha-wrap {
-      .col-8 {
+      .col-md-8 {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -295,6 +327,11 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
+      transition: 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.75;
+      }
     }
   }
 }
@@ -357,6 +394,7 @@
       .cart-table-row {
         .left {
           flex-wrap: wrap;
+          gap: 7px;
           justify-content: flex-start;
           img {
             width: 40px;
@@ -490,15 +528,13 @@
         }
       }
       .send-btn {
-        img{
+        img {
           width: 16px;
-
         }
         font-size: 14px;
         line-height: 20px;
       }
     }
-    
   }
 }
 
@@ -567,10 +603,9 @@
     .cart-form {
       padding: 24px;
       .send-btn {
-        
         font-size: 16px;
         line-height: 28px;
-        img{
+        img {
           width: 20px;
         }
       }
@@ -694,6 +729,7 @@
       }
     }
     .cart-detail {
+      padding: 18px;
       &-header {
         h2 {
           font-size: 16px;
@@ -795,7 +831,7 @@
         }
       }
       .send-btn {
-        img{
+        img {
           width: 22px;
         }
         font-size: 16px;
@@ -965,7 +1001,7 @@
         }
       }
       .send-btn {
-        img{
+        img {
           width: 24px;
         }
         font-size: 18px;
