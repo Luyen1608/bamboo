@@ -1,0 +1,50 @@
+.filter-main-btn{
+    background: #ff4c3b;
+    border-radius: 5px;
+}
+.filter-btn{
+    color: white !important;
+}
+.collection-mobile-back{
+    font-size: 20px;
+    padding: 0px 15px 15px 15px;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+.filter-main-btn {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+.collection-filter {
+    position: fixed !important;
+    height: 100vh;
+    top: 0;
+    left: -350px;
+    background-color: white;
+    z-index: 99;
+    overflow-y: scroll;
+    padding: 15px 0 15px 15px;
+    width: 320px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 1px 0 5px #ddd;
+    box-shadow: 1px 0 5px #ddd;
+    display: block;
+}
+.collection-mobile-back {
+    display: block;
+}
+.filter-main-btn {
+    display: block;
+    cursor: pointer;
+}
+.wrap-filter-arrange__bt{
+    display: none;
+}
+
+.wrap__product-filter {
+    border: none;
+}
+}
