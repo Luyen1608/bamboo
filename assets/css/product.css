@@ -580,8 +580,8 @@
 
 .product-company__info .__company-name {
     align-items: center;
-    gap: 5px;
-    padding-right: 40px;
+    gap: 15px;
+    padding-right: 5%;
     border-right: 1px solid #959EAD;
 }
 
@@ -610,7 +610,7 @@
 
 .product-company__info .__info {
     flex: 1;
-    padding-left: 40px;
+    padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -930,5 +930,7 @@ Luyendv
         font-size: 14px;
     }
 }
-
+.w-100px{
+    width: 100px;
+}
   
