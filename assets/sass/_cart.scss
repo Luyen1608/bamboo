@@ -27,6 +27,12 @@
     }
     .collapse-btn{
       cursor: pointer;
+      i{
+        transition: 0.2s ease;
+      }
+      i.active{
+        rotate: 180deg;
+      }
     }
     i {
       font-size: 10px;
@@ -208,7 +214,6 @@
         font-size: 20px;
         line-height: 32px;
         text-align: right;
-        text-decoration-line: underline;
 
         color: #de3618;
       }
@@ -267,7 +272,7 @@
         align-items: center;
         gap: 5px;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 28px;
         /* or 140% */
 
@@ -387,7 +392,7 @@
       }
       .del-btn {
         img {
-          width: 24px;
+          width: 18px;
         }
       }
 
@@ -749,17 +754,17 @@
         }
         p {
           font-size: 10px;
-          line-height: 24px;
+          line-height: 20px;
           white-space: pre-wrap;
           text-align: right;
         }
         h2 {
-          font-size: 14px;
-          line-height: 28px;
+          font-size: 12px;
+          line-height: 25px;
         }
         h3 {
-          font-size: 14px;
-          line-height: 28px;
+          font-size: 12px;
+          line-height: 25px;
         }
       }
       .cart-btn {
@@ -892,6 +897,8 @@
           }
         }
         .right {
+          justify-content: flex-end;
+          gap: 60px;
           input {
             font-size: 15px;
           }
@@ -1006,6 +1013,23 @@
         }
         font-size: 18px;
         line-height: 28px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1600px){
+  .cart-content{
+    .cart-table{
+      .cart-table-row{
+        .right{
+          gap: 70px;
+          justify-content: flex-end;
+          .price-wrap{
+            gap: 66px !important;
+          }
+        }
       }
     }
   }

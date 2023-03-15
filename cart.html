@@ -236,11 +236,11 @@
                 Giỏ hàng
               </h2>
               <p class="collapse-btn">
-                Thu gọn
+                <span>Thu gọn</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </p>
             </div>
-            <div class="row gx-3 cart-section-content">
+            <div class="row gx-3 cart-section-content active">
               <div class="col-lg-9 col-md-12 col-12">
                 <div class="cart-table">
                   <div class="cart-table-heading">
@@ -266,7 +266,7 @@
                         >
                       </div>
                       <div class="right col-7">
-                        <div class="d-flex align-items-center gap-1 price-wrap">
+                        <div class="d-flex align-items-center gap-2 price-wrap">
                           <div class="price">
                             <span>đ</span>
                             350.000
@@ -301,7 +301,7 @@
                         >
                       </div>
                       <div class="right col-7">
-                        <div class="d-flex align-items-center gap-1 price-wrap">
+                        <div class="d-flex align-items-center gap-2 price-wrap">
                           <div class="price">
                             <span>đ</span>
                             350.000
@@ -336,7 +336,7 @@
                         >
                       </div>
                       <div class="right col-7">
-                        <div class="d-flex align-items-center gap-1 price-wrap">
+                        <div class="d-flex align-items-center gap-2 price-wrap">
                           <div class="price">
                             <span>đ</span>
                             350.000
@@ -381,7 +381,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="cart-detail-content">
+                  <div class="cart-detail-content active">
                     <div
                       class="cart-detail-row d-flex align-items-center justify-content-between"
                     >
@@ -413,11 +413,11 @@
                 Liên hệ hỏi hàng
               </h2>
               <p class="collapse-btn">
-                Thu gọn
+                <span>Thu gọn</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </p>
             </div>
-            <div class="row gx-3 cart-section-content">
+            <div class="row gx-3 cart-section-content active">
               <div class="col-lg-5 col-md-12 col-12">
                 <div class="cart-table">
                   <div class="cart-table-heading">
@@ -479,7 +479,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7 col-md-12 col-12 mt-3 mt-md-0">
+              <div class="col-lg-7 col-md-12 col-12 mt-3 mt-md-0 mt-lg-0">
                 <div class="cart-form">
                   <div class="cart-form-header">
                     <h2>Thông tin người liên hệ</h2>
@@ -696,6 +696,57 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"
   ></script>
-  <!-- <script src="./assets/js/app.js"></script> -->
+ <!--  <script src="./assets/js/app.js"></script> -->
   <script src="./assets/js/cart.js"></script>
+  <script>
+    
+    const controls = document.querySelectorAll(".product-cotrol__quantity");
+    console.log(controls);
+    controls.forEach((item, i) => {
+      console.log(item);
+      item
+        .querySelector(".quantity__augure")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const _this = this;
+          const input = item.querySelector(
+            '[rel-script="quantity-change"] input'
+          );
+          const max = input.getAttribute("max");
+          const value = input.value;
+    
+          if (Number(max) > Number(value)) {
+            let quantity = Number(value) + 1;
+            input.setAttribute("value", quantity);
+          } else {
+            if (Number(max) < 0) input.setAttribute("value", 0);
+            else input.setAttribute("value", max);
+          }
+        });
+      item
+        .querySelector(".quantity__reduce")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const _this = this;
+          const input = item.querySelector('[rel-script="quantity-change"] input');
+          const max = input.getAttribute("max");
+          const min = input.getAttribute("min");
+          const value = input.value;
+    
+          if (Number(min) < Number(value)) {
+            let quantity = Number(value) - 1;
+            input.setAttribute("value", quantity);
+          } else {
+            if (Number(max) <= Number(min)) input.setAttribute("value", 0);
+            else input.setAttribute("value", min);
+          }
+        });
+    });
+    
+    /* document.addEventListener("DOMContentLoaded", function () {
+      productQuantityChange();
+    }); */
+    // handle product quantity
+    
+  </script>
 </html>
