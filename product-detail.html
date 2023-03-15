@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>product detail</title>
+        <title>Chi tiết chào hàng</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -26,8 +26,6 @@
 
         <link rel="stylesheet" href="./assets/css/app.css" />
         <link rel="stylesheet" href="./assets/css/product.css" />
-        
-        <link rel="stylesheet" href="./assets/css/custom.css" />
     </head>
 
     <body>
@@ -155,9 +153,7 @@
             <div class="content">
                 <div class="container-al mt-4 pt-2">
                     <div class="row">
-                        <div class="col-xl-18 col-lg-4 pb-5 collection-filter">
-                            <div class="collection-mobile-back"><span class="filter-back"><i class="fa fa-angle-left"
-                                aria-hidden="true"></i> Quay lại</span></div>
+                        <div class="col-xl-3 col-lg-4 pb-5">
                             <aside class="wrap__product-filter">
                                 <form action="">
                                     <div class="__inner">
@@ -203,8 +199,6 @@
                                             <label class="form-check-label" for="Check5">Vật liệu xây dựng</label>
                                         </div>
                                     </div>
-
-                                    
                                     <div class="__inner">
                                         <a href="" class="product-cat__title">
                                             Nơi sản xuất<img src="./assets/img/up.svg" alt="">
@@ -217,29 +211,9 @@
                                             <input type="checkbox" class="form-check-input" id="Check7">
                                             <label class="form-check-label" for="Check7">Nghệ an</label>
                                         </div>
-                                        <div class="content-collapsible" id="content-collapsible" style="display:none">
-                                            <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input" id="Check6">
-                                                <label class="form-check-label" for="Check6">Hải Phòng</label>
-                                            </div>
-                                            <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input" id="Check7">
-                                                <label class="form-check-label" for="Check7">Yên Bái</label>
-                                            </div>
-                                            <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input" id="Check7">
-                                                <label class="form-check-label" for="Check7">Lào Cao</label>
-                                            </div>
-                                            <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input" id="Check7">
-                                                <label class="form-check-label" for="Check7">Hà Tĩnh</label>
-                                            </div>
-                                        </div>
-                                        
-                                        <a class="product-filter__more collapsible-ct" id="collapsible-ct">
-                                            <span id="showmore" class="showmore">Xem thêm</span><img src="./assets/img/down-02.svg" alt="">
+                                        <a href="" class="product-filter__more">
+                                            Xem thêm<img src="./assets/img/down-02.svg" alt="">
                                         </a>
-                                        
                                     </div>
                                     <div class="__inner">
                                         <a href="" class="product-cat__title mb-0">
@@ -257,12 +231,12 @@
                                         </div>
                                     </div>
                                     <div class="form__under">
-                                        <button class="filter__submit" type="submit">Áp dụng</button>
+                                        <button class="filter__submit btn" type="submit">Áp dụng</button>
                                     </div>
                                 </form>
                             </aside>
                         </div>
-                        <div class="col-xl-82 col-lg-8 pb-3">
+                        <div class="col-xl-9 col-lg-8 pb-3">
                             <div class="wrap__breadcrumbs">
                                 <ul class="breadcrumb-site d-flex align-items-center">
                                     <li class="__item">
@@ -282,76 +256,56 @@
                             <div class="wrap-product__detail d-flex">
                                 <div class="wrap-product__slider">
                                     <div class="product__slider-main">
-                                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                                        <!-- Slider main container -->
+                                        <div class="swiper pr-slider">
                                             <div class="swiper-wrapper">
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                                              </div>
+                                            <!-- Slides -->
+                                                <div class="swiper-slide product__slider-item">
+                                                    <img src="./assets/img/product-slide-img-01.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-item">
+                                                    <img src="./assets/img/product-slide-img-01.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-item">
+                                                    <img src="./assets/img/product-slide-img-01.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-item">
+                                                    <img src="./assets/img/product-slide-img-01.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-item">
+                                                    <img src="./assets/img/product-slide-img-01.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-item">
+                                                    <img src="./assets/img/product-slide-img-01.png" alt="">
+                                                </div>
                                             </div>
-                                            <div class="swiper-button-next"></div>
                                             <div class="swiper-button-prev"></div>
-                                          </div>
-                                          <div thumbsSlider="" class="swiper mySwiper">
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                        <div class="swiper pr-slider-thumb mt-4">
                                             <div class="swiper-wrapper">
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                              </div>
-                                              <div class="swiper-slide">
-                                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                                              </div>
+                                            <!-- Slides -->
+                                                <div class="swiper-slide product__slider-thumb">
+                                                    <img src="./assets/img/slider-small-01.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-thumb">
+                                                    <img src="./assets/img/slider-small-02.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-thumb">
+                                                    <img src="./assets/img/slider-small-03.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-thumb">
+                                                    <img src="./assets/img/slider-small-04.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-thumb">
+                                                    <img src="./assets/img/slider-small-01.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide product__slider-thumb">
+                                                    <img src="./assets/img/slider-small-02.png" alt="">
+                                                </div>
                                             </div>
-                                          </div>
+                                          
+                                        </div>
                                     </div>
 
                                 </div>
@@ -426,7 +380,7 @@
 
                             <div class="product-company__info">
                                 <div class="__company-name d-flex">
-                                    <img src="./assets/img/tp1.png" alt="" class="w-100px">
+                                    <img src="./assets/img/tp1.png" alt="">
                                     <div class="__name">
                                         <h3>Công ty TNHH hòa phát</h3>
                                         <span>350 sản phẩm</span>
@@ -647,80 +601,40 @@
             </footer>
         </div>
     </body>
-    <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/custom.js"></script>
-    <script>
-         $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
-        });
-    </script>
+
 
    
     <script>
          // config slider
-        // let productSlider = new Swiper('.pr-slider', {
-        //     slidesPerView: 1,
-        //     loop: true,
-        //     loopedSlides: 6,
+        let productSlider = new Swiper('.pr-slider', {
+            slidesPerView: 1,
+            loop: true,
+            loopedSlides: 6,
 
-        //     navigation: {
-        //         nextEl: '.swiper-button-next',
-        //         prevEl: '.swiper-button-prev',
-        //     },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
-        // });
+        });
 
-        // let productThumbSlider = new Swiper('.pr-slider-thumb', {
-        //     slidesPerView: 5,
-        //     spaceBetween: 10,
-        //     loop: true,
-        //     slideToClickedSlide: true,
-        //     touchRatio: 0.2,
-        // });
+        let productThumbSlider = new Swiper('.pr-slider-thumb', {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            loop: true,
+            slideToClickedSlide: true,
+            touchRatio: 0.2,
+        });
 
-        // productSlider.controller.control = productThumbSlider;
-        // productThumbSlider.controller.control = productSlider;
-
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-            });
-            $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: true,
-            focusOnSelect: true
-            });
-
-            $('a[data-slide]').click(function(e) {
-            e.preventDefault();
-            var slideno = $(this).data('slide');
-            $('.slider-nav').slick('slickGoTo', slideno - 1);
-            });
+        productSlider.controller.control = productThumbSlider;
+        productThumbSlider.controller.control = productSlider;
         // config slider
 
         
