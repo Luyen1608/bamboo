@@ -2,10 +2,10 @@ const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 const width = document.querySelector(".slider .item").offsetWidth;
-const mobileOverlay = document.querySelector('.mobile-overlay')
-const select = document.querySelector('.returns-link .text')
-const optionList = document.querySelector('.option-list')
-const optionItems = document.querySelectorAll('.option-item')
+const mobileOverlay = document.querySelector(".mobile-overlay");
+const select = document.querySelector(".returns-link .text");
+const optionList = document.querySelector(".option-list");
+const optionItems = document.querySelectorAll(".option-item");
 
 let i = 0;
 slider.onscroll = () => {
@@ -45,7 +45,7 @@ const mobileCateBtn = document.querySelector(".mobile-cate-btn");
 const mobileCate = document.querySelector(".mobile-categories");
 mobileCateBtn.onclick = (e) => {
   mobileCate.classList.toggle("active");
-  mobileOverlay.classList.toggle('active')
+  mobileOverlay.classList.toggle("active");
 };
 
 /* mobileCate.onclick = () => {
@@ -63,9 +63,9 @@ const mobileDropdown = document.querySelectorAll(
 
 mobileDropdown.forEach((item) => {
   item.onclick = (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
     item.querySelector(".sub-dropdown").classList.toggle("active");
-    item.querySelector('i').classList.toggle('active')
+    item.querySelector("i").classList.toggle("active");
   };
 });
 
@@ -75,44 +75,37 @@ const mobileSubDropdown = document.querySelectorAll(
 
 mobileSubDropdown.forEach((item) => {
   item.onclick = (e) => {
-
-    e.stopPropagation()
-    item.querySelector('.lv2-sub-dropdown').classList.toggle('active')
-    item.querySelector('i').classList.toggle('active')
-
+    e.stopPropagation();
+    item.querySelector(".lv2-sub-dropdown").classList.toggle("active");
+    item.querySelector("i").classList.toggle("active");
   };
 });
 
-const lv2Dropdown = document.querySelectorAll(
-  ".categories  .lv2-dropdown"
-);
+const lv2Dropdown = document.querySelectorAll(".categories  .lv2-dropdown");
 
 lv2Dropdown.forEach((item) => {
   item.onclick = (e) => {
-
-    e.stopPropagation()
-    item.querySelector('.lv2-sub-dropdown').classList.toggle('active')
-    item.style.height = "100%"
+    e.stopPropagation();
+    item.querySelector(".lv2-sub-dropdown").classList.toggle("active");
+    item.style.height = "100%";
   };
 });
 
 mobileOverlay.onclick = () => {
-  mobileCate.classList.remove('active')
-  mobileOverlay.classList.remove('active')
-}
+  mobileCate.classList.remove("active");
+  mobileOverlay.classList.remove("active");
+};
 
-
-
-optionItems.forEach(item => {
+optionItems.forEach((item) => {
   item.onclick = () => {
-    select.innerHTML = item.innerHTML
-    optionItems.forEach(i => {
-      i.classList.remove('active')
-    })
-    item.classList.add('active')
-  }
-})
-
+    select.innerHTML = item.innerHTML;
+    optionItems.forEach((i) => {
+      i.classList.remove("active");
+    });
+    item.classList.add("active");
+  };
+});
 
 /* cart page */
 
+/* quantity handle */

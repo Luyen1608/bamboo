@@ -846,15 +846,20 @@
   .header .search-bar {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 0;
   }
   .search-bar {
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
+    margin-bottom: 20px;
   }
   .news-wrap {
     margin-top: 15px;
+  }
+  .news-wrap .news-item {
+    padding: 0;
   }
   .news-wrap .row {
     flex-direction: column-reverse;
@@ -879,6 +884,7 @@
   }
   .news-wrap .news-item {
     flex-direction: column;
+    padding-left: 0;
   }
   .news-wrap .news-item .news-item-img {
     width: 100%;
@@ -900,17 +906,20 @@
 }
 /* only 786 */
 @media screen and (min-width: 768px) and (max-width: 770px) {
-  .news-wrap {
-    /* .breadcump-wrap{
-      flex-direction: column;
-      align-items: flex-start;
-    } */
-  }
   .news-wrap .row {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
-  .news-wrap .search-bar input::placeholder {
-    font-size: 0;
+  .news-wrap .search-bar {
+    width: 100%;
+    max-width: unset !important;
+  }
+  .news-wrap .breadcump-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .news-wrap .news-item {
+    padding-left: 0;
+    padding-right: 0;
   }
   .news-wrap .news-menu h2 {
     font-size: 13px !important;
@@ -1237,7 +1246,6 @@
   font-size: 20px;
   line-height: 32px;
   text-align: right;
-  text-decoration-line: underline;
   color: #de3618;
 }
 .cart-content .cart-detail .cart-btn {
@@ -1291,7 +1299,7 @@
   align-items: center;
   gap: 5px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 28px;
   /* or 140% */
   display: flex;
@@ -1390,7 +1398,7 @@
     width: 20px;
   }
   .cart-content .cart-table .del-btn img {
-    width: 24px;
+    width: 18px;
   }
   .cart-content .cart-table .cart-table-row .left {
     flex-wrap: wrap;
@@ -1692,17 +1700,17 @@
   }
   .cart-content .cart-detail .cart-detail-row p {
     font-size: 10px;
-    line-height: 24px;
+    line-height: 20px;
     white-space: pre-wrap;
     text-align: right;
   }
   .cart-content .cart-detail .cart-detail-row h2 {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 12px;
+    line-height: 25px;
   }
   .cart-content .cart-detail .cart-detail-row h3 {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 12px;
+    line-height: 25px;
   }
   .cart-content .cart-detail .cart-btn {
     margin-top: 22px;
@@ -1919,6 +1927,15 @@
     width: 24px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .cart-content .cart-table .cart-table-row .right {
+    gap: 70px;
+    justify-content: flex-end;
+  }
+  .cart-content .cart-table .cart-table-row .right .price-wrap {
+    gap: 66px !important;
+  }
+}
 ul,
 h1,
 h2,
@@ -1974,7 +1991,7 @@ img {
 }
 
 .quantity__control {
-  width: 50px;
+  width: 50px !important;
   border: 0;
   outline: none;
   text-align: center;
@@ -1984,7 +2001,6 @@ img {
   pointer-events: none;
   background-color: transparent;
   flex: 1;
-  padding: 0px 0px 0px 14px;
 }
 
 /* quantity */
@@ -2738,6 +2754,22 @@ a:hover {
 
 /* mobile */
 @media screen and (max-width: 767.98px) {
+  /* quantity */
+  .product-cotrol__quantity {
+    padding: 7px 0px;
+    border-radius: 4px;
+  }
+  .product-cotrol__quantity a {
+    text-align: center;
+    padding: 0 13px;
+  }
+  .quantity__control {
+    width: 30px !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px 0px 0px 0px;
+  }
+  /* quantity */
   .container-al {
     padding: 0 15px;
   }
@@ -3160,6 +3192,9 @@ a:hover {
   .width-100 {
     width: 100% !important;
   }
+  .quantity__control {
+    width: 30px !important;
+  }
   .categories .categories-list .sub-dropdown {
     padding: 8px !important;
   }
@@ -3392,6 +3427,11 @@ a:hover {
     right: calc(100% + 10px);
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1030px) {
+  .quantity__control {
+    width: 35px !important;
+  }
+}
 /* large pc */
 @media screen and (min-width: 1600px) {
   .banner-heading {
@@ -3485,7 +3525,10 @@ a:hover {
   }
 }
 /* middle pc */
-@media screen and (min-width: 1401px) and (max-width: 1700px) {
+@media screen and (min-width: 1300px) and (max-width: 1700px) {
+  .quantity__control {
+    width: 40px !important;
+  }
   .banner {
     height: 235px;
   }
