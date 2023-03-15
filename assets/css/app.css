@@ -876,6 +876,11 @@
   .news-wrap .breadcump-wrap .breadcump-item h3 {
     font-size: 16px;
   }
+  .news-wrap .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   .news-wrap .news-menu h2 {
     font-size: 15px;
   }
@@ -1076,6 +1081,12 @@
 }
 .cart-content .cart-section-heading .collapse-btn {
   cursor: pointer;
+}
+.cart-content .cart-section-heading .collapse-btn i {
+  transition: 0.2s ease;
+}
+.cart-content .cart-section-heading .collapse-btn i.active {
+  rotate: 180deg;
 }
 .cart-content .cart-section-heading i {
   font-size: 10px;
@@ -1821,6 +1832,10 @@
     line-height: 22px;
     font-size: 16px;
     max-width: 230px;
+  }
+  .cart-content .cart-table .cart-table-row .right {
+    justify-content: flex-end;
+    gap: 60px;
   }
   .cart-content .cart-table .cart-table-row .right input {
     font-size: 15px;
@@ -2756,7 +2771,7 @@ a:hover {
 @media screen and (max-width: 767.98px) {
   /* quantity */
   .product-cotrol__quantity {
-    padding: 7px 0px;
+    padding: 3px 0px;
     border-radius: 4px;
   }
   .product-cotrol__quantity a {

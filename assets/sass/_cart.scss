@@ -27,6 +27,12 @@
     }
     .collapse-btn{
       cursor: pointer;
+      i{
+        transition: 0.2s ease;
+      }
+      i.active{
+        rotate: 180deg;
+      }
     }
     i {
       font-size: 10px;
@@ -891,6 +897,8 @@
           }
         }
         .right {
+          justify-content: flex-end;
+          gap: 60px;
           input {
             font-size: 15px;
           }
