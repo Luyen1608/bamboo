@@ -1987,6 +1987,7 @@ img {
 /* quantity */
 .product-cotrol__quantity {
   padding: 9px 0px;
+  background-color: #fff;
   border: 1px solid #dddfe3;
   border-radius: 4px;
   display: flex;
@@ -2014,7 +2015,6 @@ img {
   font-weight: 600;
   color: #303030;
   pointer-events: none;
-  background-color: transparent;
   flex: 1;
 }
 
@@ -3663,6 +3663,11 @@ a:hover {
 @media screen and (max-width: 370px) {
   .content .list .item .prices {
     gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .product-cotrol__quantity input {
+    padding-left: 14px;
   }
 }
 
