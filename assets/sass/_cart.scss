@@ -479,6 +479,7 @@
         input {
           padding: 8px 12px;
           font-size: 12px;
+          line-height: 20px;
           &::placeholder {
             font-size: 0;
           }
@@ -514,10 +515,10 @@
         .col-md-8 {
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 5px !important;
         }
         .captcha-img {
-          max-width: 150px;
+          max-width: 144px;
         }
         .speaker,
         .reload-img {
@@ -656,7 +657,7 @@
           gap: 8px;
         }
         .captcha-img {
-          max-width: 150px;
+          //max-width: 144px !important;
         }
         .speaker,
         .reload-img {

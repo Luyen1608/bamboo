@@ -1484,6 +1484,7 @@
   .cart-content .cart-form-row input {
     padding: 8px 12px;
     font-size: 12px;
+    line-height: 20px;
   }
   .cart-content .cart-form-row input::placeholder {
     font-size: 0;
@@ -1517,10 +1518,10 @@
   .cart-content .cart-form .captcha-wrap .col-md-8 {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px !important;
   }
   .cart-content .cart-form .captcha-wrap .captcha-img {
-    max-width: 150px;
+    max-width: 144px;
   }
   .cart-content .cart-form .captcha-wrap .speaker,
 .cart-content .cart-form .captcha-wrap .reload-img {
@@ -1632,9 +1633,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-  .cart-content .cart-form .captcha-wrap .captcha-img {
-    max-width: 150px;
   }
   .cart-content .cart-form .captcha-wrap .speaker,
 .cart-content .cart-form .captcha-wrap .reload-img {
@@ -2014,7 +2012,7 @@ img {
   font-size: 14px;
   font-weight: 600;
   color: #303030;
-  pointer-events: none;
+  cursor: text;
   flex: 1;
 }
 
