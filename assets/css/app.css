@@ -1014,12 +1014,13 @@
     font-size: 12px;
     line-height: 28px;
   }
+  .news-detail .news-detail-footer {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
   .news-detail .news-detail-footer p {
     font-size: 12px;
     line-height: 24px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start !important;
   }
   .news-detail .news-detail-footer a {
     font-size: 12px;
@@ -1124,8 +1125,7 @@
     font-size: 14px;
     line-height: 24px;
   }
-  .news-detail-footer p {
-    flex-wrap: wrap;
+  .news-detail-footer {
     flex-direction: column;
     align-items: flex-start !important;
   }
