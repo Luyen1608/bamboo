@@ -254,30 +254,30 @@
               </div>
             </div>
             <!-- Slider main container-al -->
-            <div class="slider">
-              <div class="item first">
-                <a href="#"><img src="./assets/img/item2.png" alt="" /></a>
+            <div class="slider" >
+              <div class="item first" id="12345">
+                <a href="#"><img src="./assets/img/size1.png" alt="" /></a>
                 <div class="info">
                   <div class="name">Tre đan lát</div>
                 </div>
               </div>
 
               <div class="item first">
-                <a href="#"><img src="./assets/img/item2.png" alt="" /></a>
+                <a href="#"><img src="./assets/img/size2.png" alt="" /></a>
                 <div class="info">
                   <div class="name">Tre đan lát</div>
                 </div>
               </div>
 
               <div class="item first">
-                <a href="#"><img src="./assets/img/item2.png" alt="" /></a>
+                <a href="#"><img src="./assets/img/size3.png" alt="" /></a>
                 <div class="info">
                   <div class="name">Tre đan lát</div>
                 </div>
               </div>
 
               <div class="item first">
-                <a href="#"><img src="./assets/img/item2.png" alt="" /></a>
+                <a href="#"><img src="./assets/img/size4.png" alt="" /></a>
                 <div class="info">
                   <div class="name">Tre đan lát</div>
                 </div>
@@ -404,7 +404,7 @@
             </div>
             <div class="list">
               <div class="item">
-                <a href="#"><img src="./assets/img/item1.png" alt="" /></a>
+                <a href="#"><img src="./assets/img/size1.png" alt="" /></a>
                 <div class="info">
                   <div class="name">
                     Tre đan lát tiện dụng dùng cho nội thất (3 loại sử dụng dụng
@@ -415,7 +415,7 @@
                 </div>
               </div>
               <div class="item">
-                <a href="#"><img src="./assets/img/item1.png" alt="" /></a>
+                <a href="#"><img src="./assets/img/size2.png" alt="" /></a>
                 <div class="info">
                   <div class="name">
                     Tre đan lát tiện dụng dùng cho nội thất (3 loại sử dụng dụng
@@ -426,7 +426,7 @@
                 </div>
               </div>
               <div class="item">
-                <a href="#"><img src="./assets/img/item1.png" alt="" /></a>
+                <a href="#"><img src="./assets/img/size3.png" alt="" /></a>
                 <div class="info">
                   <div class="name">(3 loại sử dụng dụng</div>
                   <div class="prices">
@@ -436,7 +436,7 @@
                 </div>
               </div>
               <div class="item">
-                <a href="#"><img src="./assets/img/item1.png" alt="" /></a>
+                <a href="#"><img src="./assets/img/size4.png" alt="" /></a>
                 <div class="info">
                   <div class="name">(3 loại sử dụng dụng</div>
                   <div class="prices">
@@ -1177,6 +1177,7 @@
       </footer>
     </div>
   </body>
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -1188,4 +1189,26 @@
     crossorigin="anonymous"
   ></script>
   <script src="./assets/js/app.js"></script>
+  <script>
+    var w = $('.slider .item a:first-child').width();
+    $('.slider .item a:first-child').css("height",w);
+
+    var witem = $('.content .list .item a:first-child').width();
+    $('.content .list .item a:first-child').css("height",witem);
+    
+  </script>
+  <style>
+    .slider .item img{
+      border-radius: 10px;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    .content .list .item img{
+      border-radius: 10px;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  </style>
 </html>
