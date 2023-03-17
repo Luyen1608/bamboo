@@ -455,6 +455,7 @@
 
 .wrap-product__desc {
   flex: 1;
+  width: calc(60% - 60px);
   padding-left: 60px;
 }
 
@@ -919,11 +920,22 @@
   }
   .product-item-date{
   }
+  .wrap-product__desc{
+    width: 100%;
+    padding-left: 0;  
+  }
+  .wrap-product__slider{
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .breadcrumb-site {
     gap: 24px;
+  }
+  .product-link__submit .filter__submit{
+    min-width: 120px;
   }
   .l-product__item .contact-btn {
     font-size: 12px;
@@ -1009,4 +1021,15 @@ Luyendv
   .form-check-label {
     font-size: 14px;
   }
+}
+
+/* vu */
+
+/* only 1024 */
+
+@media screen and (min-width:1024px) and (max-width: 1030px){
+  .product-link__submit .filter__submit{
+    min-width: 130px;
+  }
+  
 }

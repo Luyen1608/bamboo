@@ -475,9 +475,12 @@
         }
       }
       &-row {
+       
         margin-top: 14px;
         input {
           padding: 8px 12px;
+          margin-top: 5px;
+
           font-size: 12px;
           line-height: 20px;
           &::placeholder {
@@ -499,10 +502,10 @@
           height: 18px;
         }
         .col-8 {
-          width: 50% !important;
+          width: 100% !important;
         }
         .col-4 {
-          width: 50% !important;
+          width: 100% !important;
         }
         .radio-group {
           gap: 10px;
@@ -518,19 +521,19 @@
           gap: 5px !important;
         }
         .captcha-img {
-          max-width: 144px;
+          max-width: 115px;
         }
         .speaker,
         .reload-img {
-          width: 25px;
+          width: 22px;
         }
         input {
           flex: 1;
           background: #f3f4f4;
           border: 1px solid #f3f4f4;
           border-radius: 8px;
-          font-size: 16px;
-          line-height: 24px;
+          font-size: 12px;
+          line-height: 18px;
         }
       }
       .send-btn {

@@ -1802,6 +1802,7 @@
   }
   .cart-content .cart-form-row input {
     padding: 8px 12px;
+    margin-top: 5px;
     font-size: 12px;
     line-height: 20px;
   }
@@ -1823,10 +1824,10 @@
     height: 18px;
   }
   .cart-content .cart-form-row .col-8 {
-    width: 50% !important;
+    width: 100% !important;
   }
   .cart-content .cart-form-row .col-4 {
-    width: 50% !important;
+    width: 100% !important;
   }
   .cart-content .cart-form-row .radio-group {
     gap: 10px;
@@ -1840,19 +1841,19 @@
     gap: 5px !important;
   }
   .cart-content .cart-form .captcha-wrap .captcha-img {
-    max-width: 144px;
+    max-width: 115px;
   }
   .cart-content .cart-form .captcha-wrap .speaker,
 .cart-content .cart-form .captcha-wrap .reload-img {
-    width: 25px;
+    width: 22px;
   }
   .cart-content .cart-form .captcha-wrap input {
     flex: 1;
     background: #f3f4f4;
     border: 1px solid #f3f4f4;
     border-radius: 8px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 18px;
   }
   .cart-content .cart-form .send-btn {
     font-size: 14px;
