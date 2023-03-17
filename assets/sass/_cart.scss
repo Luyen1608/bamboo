@@ -549,6 +549,15 @@
 
 /* only 786 */
 @media screen and (min-width: 768px) and (max-width: 770px) {
+  .cart-content{
+    .cart-form{
+      .captcha-wrap{
+        .captcha-img{
+          max-width: 170px;
+        }
+      }
+    }
+  }
 }
 
 /* tablet */
