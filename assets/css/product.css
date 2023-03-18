@@ -17,6 +17,7 @@
   width: 60px;
   height: 60px;
   object-fit: cover;
+  max-width: 60px;
 }
 
 /* search wrap */
@@ -782,6 +783,7 @@
 
 .product-desc__block {
   margin-bottom: 30px;
+  margin-top: 5vh;
   flex: 1;
 }
 
@@ -1165,7 +1167,7 @@ Luyendv
     padding: 15px 0;
     width: 180px;
     margin-top: 40px;
-
+    
     gap: 7px;
     font-size: 16px;
     line-height: 20px;
@@ -1175,7 +1177,7 @@ Luyendv
 /* middle pc */
 @media screen and (min-width: 1300px) and (max-width: 1600px) {
   .product__info {
-    margin-top: 70px;
+    margin-top: 4vh;
   }
   .product__info p {
     font-size: 17px;
@@ -1237,7 +1239,7 @@ Luyendv
 /* mobile */
 @media screen and (max-width: 767.98px) {
   .product__info {
-    margin-top: 70px;
+    margin-top: 4vh;
   }
   .product__info p {
     font-size: 17px;
@@ -1248,6 +1250,7 @@ Luyendv
     font-size: 20px;
     line-height: 28px;
     margin-top: 50px;
+  
   }
   .product__view {
     font-size: 20px;
@@ -1258,7 +1261,7 @@ Luyendv
     padding: 17px 0;
     width: 195px;
     margin-top: 65px;
-
+    
     gap: 7px;
     font-size: 16px;
     line-height: 20px;
