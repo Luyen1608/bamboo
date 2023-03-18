@@ -2,7 +2,7 @@
 .slick-dots {
   display: flex;
   gap: 20px;
-  overflow: hidden;
+  overflow: auto;
 }
 .slick-arrow{
   position: absolute;
