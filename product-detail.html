@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doanh nghiep chi tiet</title>
+    <title>product detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -54,6 +54,7 @@
 
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
 
   <body>
@@ -184,14 +185,122 @@
       <div class="content">
         <div class="container-al mt-4 pt-2">
           <div class="row">
-            
-            <div class="col-12">
+            <div class="col-xl-18 col-lg-4 pb-5 collection-filter">
+              <div class="collection-mobile-back"><span class="filter-back"><i class="fa fa-angle-left"
+                  aria-hidden="true"></i> Quay lại</span></div>
+              <aside class="wrap__product-filter">
+                  <form action="">
+                      <div class="__inner">
+                          <h2>Tìm kiếm</h2>
+                          <ul class="filter__tags">
+                              <li>
+                                  <img src="./assets/img/close.svg" alt="">
+                                  <span>Danh mục</span>
+                              </li>
+                              <li>
+                                  <img src="./assets/img/close.svg" alt="">
+                                  <span>Nơi sản xuất</span>
+                              </li>
+                              <li>
+                                  <img src="./assets/img/close.svg" alt="">
+                                  <span>Thương hiệu</span>
+                              </li>
+                          </ul>
+                          <a href="" class="delete__all-filter">Xóa tất cả</a>
+                      </div>
+                      <div class="__inner">
+                          <a href="" class="product-cat__title">
+                              Danh mục<img src="./assets/img/up.svg" alt="">
+                          </a>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="Check1" checked>
+                              <label class="form-check-label" for="Check1">Đồ bếp</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="Check2">
+                              <label class="form-check-label" for="Check2">Nội thất</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="Check3">
+                              <label class="form-check-label" for="Check3">Ngoại thất</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="Check4">
+                              <label class="form-check-label" for="Check4">Mỹ nghệ</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="Check5">
+                              <label class="form-check-label" for="Check5">Vật liệu xây dựng</label>
+                          </div>
+                      </div>
+
+                      
+                      <div class="__inner">
+                          <a href="" class="product-cat__title">
+                              Nơi sản xuất<img src="./assets/img/up.svg" alt="">
+                          </a>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="Check6" checked>
+                              <label class="form-check-label" for="Check6">Hà nội</label>
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="Check7">
+                              <label class="form-check-label" for="Check7">Nghệ an</label>
+                          </div>
+                          <div class="content-collapsible" id="content-collapsible" style="display:none">
+                              <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="Check6">
+                                  <label class="form-check-label" for="Check6">Hải Phòng</label>
+                              </div>
+                              <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="Check7">
+                                  <label class="form-check-label" for="Check7">Yên Bái</label>
+                              </div>
+                              <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="Check7">
+                                  <label class="form-check-label" for="Check7">Lào Cao</label>
+                              </div>
+                              <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="Check7">
+                                  <label class="form-check-label" for="Check7">Hà Tĩnh</label>
+                              </div>
+                          </div>
+                          
+                          <a class="product-filter__more collapsible-ct" id="collapsible-ct">
+                              <span id="showmore" class="showmore">Xem thêm</span><img src="./assets/img/down-02.svg" alt="">
+                          </a>
+                          
+                      </div>
+                      <div class="__inner">
+                          <a href="" class="product-cat__title mb-0">
+                              Thương hiệu<img src="./assets/img/down02.svg" alt="">
+                          </a>
+                      </div>
+                      <div class="__inner">
+                          <a href="" class="product-cat__title">
+                              Khoảng giá
+                          </a>
+                          <div class="form-group-site d-flex">
+                              <input type="text" class="form-control" placeholder="Từ">
+                              <span>~</span>
+                              <input type="text" class="form-control" placeholder="Đến">
+                          </div>
+                      </div>
+                      <div class="form__under">
+                          <button class="filter__submit" type="submit">Áp dụng</button>
+                      </div>
+                  </form>
+              </aside>
+          </div>
+            <div class="col-xl-82 col-lg-8 pb-3">
+              <div class="filter-main-btn" style="width: fit-content; margin-bottom: 10px;"">
+                <span class="filter-btn btn btn-theme"><i class="fa fa-filter"
+                        aria-hidden="true"></i> Filter</span></div>
               <div class="wrap__breadcrumbs">
                 <ul class="breadcrumb-site d-flex align-items-center">
-                  <li class="__item">
+                  <li class="__item ct-icon-bamboo">
                     <a href="#"
-                      ><img src="./assets/img/cib_bamboo.svg" alt="" />Đồ bếp</a
-                    >
+                      ><img class="" src="./assets/img/cib_bamboo.svg" alt="" /><span>Đồ bếp</span></a>
                   </li>
                   <li class="__item">
                     <a href="#">Đèn tre</a>
@@ -214,31 +323,31 @@
                     <div class="swiper pr-slider">
                       <div class="swiper-slide product__slider-item">
                         <img
-                          src="./assets/img/product-slide-img-01.png"
+                          src="./assets/img/item1.png"
                           alt=""
                         />
                       </div>
                       <div class="swiper-slide product__slider-item">
                         <img
-                          src="./assets/img/product-slide-img-01.png"
+                          src="./assets/img/item2.png"
                           alt=""
                         />
                       </div>
                       <div class="swiper-slide product__slider-item">
                         <img
-                          src="./assets/img/product-slide-img-01.png"
+                          src="./assets/img/item3.png"
                           alt=""
                         />
                       </div>
                       <div class="swiper-slide product__slider-item">
                         <img
-                          src="./assets/img/product-slide-img-01.png"
+                          src="./assets/img/item4.png"
                           alt=""
                         />
                       </div>
                       <div class="swiper-slide product__slider-item">
                         <img
-                          src="./assets/img/product-slide-img-01.png"
+                          src="./assets/img/item5.png"
                           alt=""
                         />
                       </div>
@@ -372,12 +481,12 @@
                   </div>
                 </div>
                 <div class="__info">
-                  <div class="__item">Năm thành lập: 2019</div>
-                  <div class="__item">Số điện thoại : 0123-4567-789</div>
-                  <div class="__item">
+                  <div class="__item ct-year">Năm thành lập: 2019</div>
+                  <div class="__item ct-website">
                     <a href="#">Website: https://congtytnhhhoaphat.com.vn/</a>
                   </div>
-                  <div class="__item">
+                  <div class="__item ct-phone">Số điện thoại : 0123-4567-789</div>
+                  <div class="__item ct-adress">
                     Địa chỉ: Thành phố Vinh, Tỉnh Nghệ An
                   </div>
                 </div>
@@ -476,7 +585,7 @@
                 </p>
               </div>
               <div
-                class="d-flex align-items-start justify-content-between gap-3"
+                class="d-flex align-items-start justify-content-between gap-3 d-block-450"
               >
                 <div class="product-desc__block">
                   <h3>Mô tả sản phẩm</h3>
@@ -592,6 +701,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/custom.js"></script>
 
   <script>
     $(".pr-slider").slick({
@@ -659,4 +769,58 @@
     });
     // handle product quantity
   </script>
+  <style>
+    @media screen and (min-width: 768px) and (max-width: 1023.98px){
+  .container-al {
+      padding: 0 2%;
+  }}
+  </style>
+  <style>
+    @media (max-width: 1300px){
+    .collection-filter {
+        position: fixed !important;
+        height: 100vh;
+        top: 0;
+        left: -350px;
+        background-color: white;
+        z-index: 99;
+        overflow-y: scroll;
+        padding: 15px 0 15px 15px;
+        width: 320px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-box-shadow: 1px 0 5px #ddd;
+        box-shadow: 1px 0 5px #ddd;
+        display: block;
+    }
+    .collection-mobile-back {
+        display: block;
+    }
+    .filter-main-btn {
+        display: block;
+        cursor: pointer;
+    }
+    .wrap-filter-arrange__bt{
+        display: none;
+    }
+
+    .wrap__product-filter {
+        border: none;
+    }
+    }
+    @media (max-width: 1300px){
+        .col-lg-8 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+    .filter-btn{
+        height: 45px;
+        align-items: center;
+        display: flex;
+    }
+    .filter-main-btn{
+        margin-left: 5px;
+    }
+</style>
 </html>
