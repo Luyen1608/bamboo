@@ -7,6 +7,18 @@
     <title>product detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -334,49 +346,45 @@
                   <div class="product__slider-main">
                     <!-- Slider main container -->
                     <div class="swiper pr-slider">
-                      <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide product__slider-item">
-                          <img
-                            src="./assets/img/product-slide-img-01.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide product__slider-item">
-                          <img
-                            src="./assets/img/product-slide-img-01.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide product__slider-item">
-                          <img
-                            src="./assets/img/product-slide-img-01.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide product__slider-item">
-                          <img
-                            src="./assets/img/product-slide-img-01.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide product__slider-item">
-                          <img
-                            src="./assets/img/product-slide-img-01.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide product__slider-item">
-                          <img
-                            src="./assets/img/product-slide-img-01.png"
-                            alt=""
-                          />
-                        </div>
+                      <div class="swiper-slide product__slider-item">
+                        <img
+                          src="./assets/img/product-slide-img-01.png"
+                          alt=""
+                        />
                       </div>
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
+                      <div class="swiper-slide product__slider-item">
+                        <img
+                          src="./assets/img/product-slide-img-01.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide product__slider-item">
+                        <img
+                          src="./assets/img/product-slide-img-01.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide product__slider-item">
+                        <img
+                          src="./assets/img/product-slide-img-01.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide product__slider-item">
+                        <img
+                          src="./assets/img/product-slide-img-01.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide product__slider-item">
+                        <img
+                          src="./assets/img/product-slide-img-01.png"
+                          alt=""
+                        />
+                      </div>
+                     
+                     
                     </div>
-                    
                   </div>
                 </div>
                 <div class="wrap-product__desc">
@@ -706,6 +714,7 @@
       </footer>
     </div>
   </body>
+
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -719,43 +728,18 @@
   <script src="./assets/js/app.js"></script>
 
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      loop: true,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
+    $(".pr-slider").slick({
+      dots: true,
+      prevArrow:
+        '<a class="slick-prev" href="#"><i data-icon="ei-arrow-left" data-size="m"></i></a>',
+      nextArrow:
+        '<a class="slick-next" href="#"><i data-icon="ei-arrow-right" data-size="m"></i></a>',
+      customPaging: function (slick, index) {
+        var targetImage = slick.$slides.eq(index).find("img").attr("src");
+        return '<img src=" ' + targetImage + ' "/>';
       },
     });
     // config slider
-    let productSlider = new Swiper(".pr-slider", {
-      slidesPerView: 1,
-      loop: true,
-      loopedSlides: 6,
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-
-    /*let productThumbSlider = new Swiper(".pr-slider-thumb", {
-      slidesPerView: 5,
-      spaceBetween: 10,
-      loop: true,
-      slideToClickedSlide: true,
-      touchRatio: 0.2,
-    });*/
 
     //productSlider.controller.control = productThumbSlider;
     productThumbSlider.controller.control = productSlider;

@@ -1,5 +1,23 @@
 /*======== style for product page ========*/
-
+.slick-dots {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.slick-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.slick-next{
+  right: 0;
+}
+.slick-dots img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
 .wrap__product-filter {
   position: sticky;
   top: 0px;
@@ -918,13 +936,13 @@
     width: fit-content;
     top: 82%;
   }
-  .product-item-date{
+  .product-item-date {
   }
-  .wrap-product__desc{
+  .wrap-product__desc {
     width: 100%;
-    padding-left: 0;  
+    padding-left: 0;
   }
-  .wrap-product__slider{
+  .wrap-product__slider {
     width: 100%;
     margin-bottom: 25px;
   }
@@ -934,7 +952,7 @@
   .breadcrumb-site {
     gap: 24px;
   }
-  .product-link__submit .filter__submit{
+  .product-link__submit .filter__submit {
     min-width: 120px;
   }
   .l-product__item .contact-btn {
@@ -1027,9 +1045,8 @@ Luyendv
 
 /* only 1024 */
 
-@media screen and (min-width:1024px) and (max-width: 1030px){
-  .product-link__submit .filter__submit{
+@media screen and (min-width: 1024px) and (max-width: 1030px) {
+  .product-link__submit .filter__submit {
     min-width: 130px;
   }
-  
 }
