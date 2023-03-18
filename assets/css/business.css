@@ -454,7 +454,7 @@
   margin-right: 10px;
 }
 .content .item.item-full img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .content .item.item-full .name {
   margin-bottom: 10px;
