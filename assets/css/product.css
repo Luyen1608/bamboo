@@ -641,11 +641,13 @@
 
 .product-company__info .__company-name {
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   padding-right: 40px;
   border-right: 1px solid #959ead;
 }
-
+.product-company__info .__company-name img{
+  width: 120px;
+}
 .product-company__info .__company-name h3 {
   font-size: 17px;
   font-weight: 600;
