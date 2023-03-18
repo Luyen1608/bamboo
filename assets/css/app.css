@@ -2393,7 +2393,7 @@ img {
 }
 
 .pagination-site .__item.next:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .pagination-site .__item.next img {
