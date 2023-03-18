@@ -18,6 +18,41 @@
   height: 60px;
   object-fit: cover;
 }
+
+/* search wrap */
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.search-wrap input {
+  padding: 11px 16px;
+  font-weight: 400;
+  width: 468px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8b919a;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.search-icon {
+  background: #8bc63f;
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  cursor: pointer;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 12px;
+}
+.search-icon i {
+  color: #fff;
+}
 .wrap__product-filter {
   position: sticky;
   top: 0px;
@@ -70,7 +105,8 @@
   background: #0184d3;
   border-radius: 6px;
   cursor: pointer;
-  display: flex;margin-top: 65px;
+  display: flex;
+  margin-top: 65px;
   align-items: center;
   justify-content: center;
   gap: 7px;
@@ -385,7 +421,7 @@
 }
 .product-item-date img {
 }
-.product-item-date p {
+.l-product__item .product-item-date p {
   font-weight: 600;
   font-size: 17px;
   line-height: 22px;
@@ -425,14 +461,13 @@
 .producer__location {
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 16px;
   row-gap: 4px;
 }
 
 .producer__location .__inner {
-  flex: 1;
-  min-width: 120px;
+  min-width: 200px;
   row-gap: 4px;
   display: flex;
   align-items: flex-start;
@@ -689,7 +724,7 @@
   border-right: 1px solid #959ead;
   max-width: 450px;
 }
-.product-company__info .__company-name img{
+.product-company__info .__company-name img {
   width: 120px;
 }
 .product-company__info .__company-name h3 {
@@ -1011,7 +1046,7 @@
   .product-link__submit .filter__submit {
     min-width: 45%;
   }
-  .product-link__submit{
+  .product-link__submit {
     justify-content: space-evenly;
   }
   .l-product__item .contact-btn {
@@ -1114,25 +1149,23 @@ Luyendv
   .product__info p {
     font-size: 15px;
     line-height: 22px;
-  
   }
- 
+
   .product__price {
     font-size: 18px;
     line-height: 28px;
     margin-top: 30px;
-  
   }
   .product__view {
     font-size: 18px;
     line-height: 25px;
   }
-  
+
   .product__contact-btn {
     padding: 15px 0;
     width: 180px;
     margin-top: 40px;
-    
+
     gap: 7px;
     font-size: 16px;
     line-height: 20px;
@@ -1140,32 +1173,30 @@ Luyendv
 }
 
 /* middle pc */
-@media screen and (min-width: 1300px) and (max-width: 1600px){
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
   .product__info {
     margin-top: 70px;
   }
   .product__info p {
     font-size: 17px;
     line-height: 22px;
-  
   }
- 
+
   .product__price {
     font-size: 20px;
     line-height: 28px;
     margin-top: 50px;
-  
   }
   .product__view {
     font-size: 20px;
     line-height: 28px;
   }
-  
+
   .product__contact-btn {
     padding: 17px 0;
     width: 195px;
     margin-top: 65px;
-    
+
     gap: 7px;
     font-size: 16px;
     line-height: 20px;
@@ -1180,25 +1211,23 @@ Luyendv
   .product__info p {
     font-size: 13px;
     line-height: 22px;
-  
   }
- 
+
   .product__price {
     font-size: 16px;
     line-height: 25px;
     margin-top: 20px;
-  
   }
   .product__view {
     font-size: 16px;
     line-height: 20px;
   }
-  
+
   .product__contact-btn {
     padding: 13px 0;
     width: 150px;
     margin-top: 20px;
-    
+
     gap: 7px;
     font-size: 15px;
     line-height: 18px;
@@ -1213,28 +1242,41 @@ Luyendv
   .product__info p {
     font-size: 17px;
     line-height: 22px;
-  
   }
- 
+
   .product__price {
     font-size: 20px;
     line-height: 28px;
     margin-top: 50px;
-  
   }
   .product__view {
     font-size: 20px;
     line-height: 28px;
   }
-  
+
   .product__contact-btn {
     padding: 17px 0;
     width: 195px;
     margin-top: 65px;
-    
+
     gap: 7px;
     font-size: 16px;
     line-height: 20px;
+  }
+  .product-item-date {
+    gap: 5px;
+  }
+  .product-item-date img{
+    width: 15px;
+  }
+  .l-product__item span {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .l-product__item .product-item-date p {
+    font-size: 12px;
+    line-height: 22px;
+    display: block;
   }
 }
 /* tablet */
@@ -1246,25 +1288,23 @@ Luyendv
   .product__info p {
     font-size: 13px;
     line-height: 22px;
-  
   }
- 
+
   .product__price {
     font-size: 16px;
     line-height: 25px;
     margin-top: 15px;
-  
   }
   .product__view {
     font-size: 16px;
     line-height: 20px;
   }
-  
+
   .product__contact-btn {
     padding: 13px 0;
     width: 100%;
     margin-top: 20px;
-    
+
     gap: 7px;
     font-size: 15px;
     line-height: 18px;
