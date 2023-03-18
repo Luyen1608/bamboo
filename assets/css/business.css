@@ -705,7 +705,7 @@
     min-height: unset;
   }
   .wrap__breadcrumbs ul {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .search-bar {
     margin-bottom: 0px;

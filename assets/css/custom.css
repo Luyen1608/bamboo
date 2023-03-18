@@ -1,3 +1,13 @@
+.border-radius-10{
+    border-radius: 10px;
+}
+.border-gray-2{
+    border: 1px solid #CECDCD;
+}
+.pl-4, .px-4 { padding-left: 1.5rem !important; }
+.pr-4, .px-4 { padding-right: 1.5rem !important; }
+.pl-3, .px-3 { padding-left: 1rem !important; }
+.pr-3, .px-3 { padding-right: 1rem !important; }
 .boder-up{
     border-radius: 10px 10px 0 0;
     border: 1px solid #CECDCD;
@@ -114,6 +124,9 @@
     
 }
 @media (max-width: 650px){
+    .d-none-mobile{
+        display: none!important;
+    }
     .l-business__item{
         grid-template-columns: unset;
     }
