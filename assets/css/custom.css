@@ -1,3 +1,10 @@
+.ct-icon-bamboo{
+    min-width: 90px;
+}
+.slick-slide img {
+    height: 100%;
+    width: 100%;
+}
 .filter-main-btn{
     background: #ff4c3b;
     border-radius: 5px;
@@ -59,6 +66,13 @@
 .verify-img.mobile{
     display: none;
 }
+
+@media (max-width: 1024px){
+    /* .wrap-product__slider {
+        width: 60%;
+        margin-bottom: 25px;
+    } */
+}
 @media (max-width: 1000px){
     .l-business__item{
         grid-template-columns: 200px auto 100px;
@@ -72,6 +86,7 @@
     .l-business__item .__desc .business__item-title .call{
         display: block;
     }
+    
 }
 @media (max-width: 650px){
     .l-business__item{
@@ -90,4 +105,14 @@
 
     }
 }
+@media (max-width: 450px){
+    .product-info__row {
+        display: block;
+    }
+    .d-block-450 {
+        display: block !important;
+    }
+    
+}
+
 

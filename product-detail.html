@@ -298,10 +298,9 @@
                         aria-hidden="true"></i> Filter</span></div>
               <div class="wrap__breadcrumbs">
                 <ul class="breadcrumb-site d-flex align-items-center">
-                  <li class="__item">
+                  <li class="__item ct-icon-bamboo">
                     <a href="#"
-                      ><img src="./assets/img/cib_bamboo.svg" alt="" />Đồ bếp</a
-                    >
+                      ><img class="" src="./assets/img/cib_bamboo.svg" alt="" /><span>Đồ bếp</span></a>
                   </li>
                   <li class="__item">
                     <a href="#">Đèn tre</a>
@@ -482,12 +481,12 @@
                   </div>
                 </div>
                 <div class="__info">
-                  <div class="__item">Năm thành lập: 2019</div>
-                  <div class="__item">Số điện thoại : 0123-4567-789</div>
-                  <div class="__item">
+                  <div class="__item ct-year">Năm thành lập: 2019</div>
+                  <div class="__item ct-website">
                     <a href="#">Website: https://congtytnhhhoaphat.com.vn/</a>
                   </div>
-                  <div class="__item">
+                  <div class="__item ct-phone">Số điện thoại : 0123-4567-789</div>
+                  <div class="__item ct-adress">
                     Địa chỉ: Thành phố Vinh, Tỉnh Nghệ An
                   </div>
                 </div>
@@ -586,7 +585,7 @@
                 </p>
               </div>
               <div
-                class="d-flex align-items-start justify-content-between gap-3"
+                class="d-flex align-items-start justify-content-between gap-3 d-block-450"
               >
                 <div class="product-desc__block">
                   <h3>Mô tả sản phẩm</h3>
@@ -770,4 +769,58 @@
     });
     // handle product quantity
   </script>
+  <style>
+    @media screen and (min-width: 768px) and (max-width: 1023.98px){
+  .container-al {
+      padding: 0 2%;
+  }}
+  </style>
+  <style>
+    @media (max-width: 1300px){
+    .collection-filter {
+        position: fixed !important;
+        height: 100vh;
+        top: 0;
+        left: -350px;
+        background-color: white;
+        z-index: 99;
+        overflow-y: scroll;
+        padding: 15px 0 15px 15px;
+        width: 320px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-box-shadow: 1px 0 5px #ddd;
+        box-shadow: 1px 0 5px #ddd;
+        display: block;
+    }
+    .collection-mobile-back {
+        display: block;
+    }
+    .filter-main-btn {
+        display: block;
+        cursor: pointer;
+    }
+    .wrap-filter-arrange__bt{
+        display: none;
+    }
+
+    .wrap__product-filter {
+        border: none;
+    }
+    }
+    @media (max-width: 1300px){
+        .col-lg-8 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+    .filter-btn{
+        height: 45px;
+        align-items: center;
+        display: flex;
+    }
+    .filter-main-btn{
+        margin-left: 5px;
+    }
+</style>
 </html>
