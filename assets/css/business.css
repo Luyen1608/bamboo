@@ -1,3 +1,98 @@
+/* Nav */
+.p-content{
+    padding: 0 18vw;
+}
+@media (max-width: 1600px){
+    .p-content{
+        padding: 0 10vw;
+    }
+   
+}
+@media (max-width: 1366px){
+    .p-content{
+        padding: 0 5vw;
+    }
+    .container-al[role="business"] .infoboxs .item {
+        grid-template-columns: 50px auto!important;
+    }   
+}
+@media (max-width: 1024px){
+    .container-al[role="business"] .infoboxs {
+        margin-left: 10px !important;
+    } 
+}
+@media (max-width: 1019px){
+    .container-al[role="business"] {
+        grid-template-columns: auto !important;
+    }
+}
+@media (max-width: 1019px){
+    .container-al[role="business"] .infoboxs .wrapper {
+        display: block !important   ;
+    }
+}
+@media (max-width: 450px){
+    .business-info__row {
+       display: block !important;
+    }
+}
+
+
+
+.nav-tabs-ct{
+    display: flex;
+}
+@media (min-width: 1200px){
+    .nav-tabs-ct .nav-item-ct {
+        padding-right: 2.25rem;
+    }
+   
+}
+@media (min-width: 992px){
+    .nav-tabs-ct .nav-item-ct {
+        padding-right: 1.75rem;
+    }
+}
+@media (min-width: 768px){
+.nav-tabs-ct .nav-item-ct {
+    padding-right: 1.5rem;
+}}
+.nav-tabs-ct .nav-link-ct:after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: #e60909e0;
+    opacity: 0;
+}
+.nav-tabs-ct .nav-link-ct:before, .nav-tabs-ct .nav-link-ct:after {
+    position: absolute;
+    content: '';
+}
+.nav-tabs-ct .nav-link-ct.active:after {
+    opacity: 1;
+}
+.nav-tabs-ct .nav-link-ct {
+    padding: 1rem 0.6rem;
+    font-weight: 700;
+    color: #526484;
+    position: relative;
+    border: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.nav-tabs-ct .nav-link-ct.active {
+    color: #e60909e0;
+    border: none;
+    background-color: transparent;
+}
+.row-ct {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* nav close */
 .wrap__business-filter {
   padding-top: 0px;
   position: sticky;
@@ -623,7 +718,6 @@
   }
   .container-al[role="business"] .infoboxs {
     margin-left: 0;
-    display: none;
   }
 }
 @media only screen and (max-width: 480px) {

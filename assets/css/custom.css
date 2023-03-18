@@ -1,3 +1,23 @@
+.boder-up{
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #CECDCD;
+    border-bottom: none;
+}
+.boder-down{
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #CECDCD;
+    border-top: none;
+}
+
+.txt-headling-3{
+    font-size: 15pt;
+    line-height: 24px;
+    font-weight: 500 !important;
+}
+
+.bg-gray-2{
+    background-color: #F3F4F4;
+}
 .ct-icon-bamboo{
     min-width: 90px;
 }
@@ -67,6 +87,11 @@
     display: none;
 }
 
+@media (max-width: 1768px){
+    .p-content {
+        /* padding: 0 5vw; */
+    }
+}
 @media (max-width: 1024px){
     /* .wrap-product__slider {
         width: 60%;
