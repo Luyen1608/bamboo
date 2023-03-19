@@ -251,17 +251,6 @@
                                           type="radio"
                                           name="tshirt_size"
                                           value="s"
-                                          data-title=""
-                                        />
-                                        <span class="checkmark --ct-pd">35x75x40cm</span>
-                                      </div>
-                                    </label>
-                                    <label class="option-select__item">
-                                      <div class="option-select__inner">
-                                        <input
-                                          type="radio"
-                                          name="tshirt_size"
-                                          value="s"
                                           data-title="M"
                                         />
                                         <span class="checkmark">M</span>
@@ -514,17 +503,17 @@
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script type="text/javascript">
-      $(".pr-slider").slick({
-        dots: true,
-        prevArrow:
-          '<a class="slick-prev" href="#"><i data-icon="ei-arrow-left" data-size="m"></i></a>',
-        nextArrow:
-          '<a class="slick-next" href="#"><i data-icon="ei-arrow-right" data-size="m"></i></a>',
-        customPaging: function (slick, index) {
-          var targetImage = slick.$slides.eq(index).find("img").attr("src");
-          return '<img src=" ' + targetImage + ' "/>';
-        },
-      });
+        $(".pr-slider").slick({
+          dots: true,
+          prevArrow:
+            '<a class="slick-prev" href="#"> <i class="fa-solid fa-chevron-left"></i></a>',
+          nextArrow:
+            '<a class="slick-next" href="#"> <i class="fa-solid fa-chevron-right"></i></a>',
+          customPaging: function (slick, index) {
+            var targetImage = slick.$slides.eq(index).find("img").attr("src");
+            return '<img src=" ' + targetImage + ' "/>';
+          },
+        });
         function checkSize() {
            var header = $("#menu-header").width();
            var menu = $(".nav-tabs-ct").width();
@@ -535,6 +524,18 @@
         $( document ).ready(function() {
             checkSize();
         });
-    
     </script>
+    <style>
+       @media (max-width: 1100px){
+        .product__name{
+         margin-bottom: 0px;
+        }
+        .product__brand {
+            margin-bottom: 2vh;
+        }
+        .product-link__submit {
+          margin-top: 4vh;
+        }
+       }
+    </style>
 </html>
