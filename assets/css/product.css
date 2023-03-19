@@ -561,9 +561,10 @@
 .wrap-product__desc {
   flex: 1;
   width: calc(60% - 60px);
+  display: flex;
   padding-left: 2vw;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 .wrap-product__desc-row {
   display: flex;
@@ -743,7 +744,7 @@
 .product-company__info {
   margin: 34px 0px 25px;
   background: #91ea9a1a;
-  padding: 20px 26px 20px 20px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
@@ -971,12 +972,12 @@
   .pagination-site {
     gap: 12px;
   }
-  .product-company__info .__company-name {
+  /*  .product-company__info .__company-name {
     padding-right: 30px;
   }
   .product-company__info .__info {
     padding-left: 30px;
-  }
+  } */
   .product-company__info .__info .__item {
     width: auto;
     padding-right: 0px;
@@ -1132,6 +1133,9 @@
   .l-product__item {
     padding: 12px;
   }
+  .search-wrap input {
+    max-width: 60%;
+  }
   .product__item-title a {
     font-size: 16px;
     margin-bottom: 4px;
@@ -1194,7 +1198,7 @@ Luyendv
 
 @media screen and (min-width: 1024px) and (max-width: 1030px) {
   .collection-filter {
-    width: 18%;
+    width: 25%;
   }
   .col-xl-9 {
     flex: 1;
@@ -1249,10 +1253,14 @@ Luyendv
     margin-top: 30px;
     gap: 30px;
   }
-  .__company-link li a{
+  .__company-link li a {
     gap: 10px;
     font-size: 15px;
     line-height: 32px;
+  }
+  .product-company__info .__company-name {
+    padding-right: 12px;
+    max-width: 510px;
   }
 }
 
@@ -1302,10 +1310,17 @@ Luyendv
     margin-top: 30px;
     gap: 30px;
   }
-  .__company-link li a{
+  .__company-link li a {
     gap: 10px;
     font-size: 16px;
     line-height: 32px;
+  }
+  .product-company__info .__company-name {
+    padding-right: 12px;
+    max-width: 510px;
+  }
+  .product-company__info .__info {
+    padding-left: 12px;
   }
 }
 /* tablet */
@@ -1357,10 +1372,14 @@ Luyendv
     margin-top: 20px;
     gap: 20px;
   }
-  .__company-link li a{
+  .__company-link li a {
     gap: 10px;
     font-size: 14px;
     line-height: 32px;
+  }
+  .product-company__info .__company-name {
+    padding-right: 12px;
+    max-width: 510px;
   }
 }
 
@@ -1376,7 +1395,7 @@ Luyendv
     flex-direction: column;
     align-items: flex-start;
   }
-  .__company-link li a{
+  .__company-link li a {
     gap: 10px;
     font-size: 14px;
     line-height: 32px;
@@ -1436,6 +1455,10 @@ Luyendv
     font-size: 14px;
     line-height: 25px;
   }
+  .product-company__info .__company-name {
+    padding-right: 12px;
+    max-width: 510px;
+  }
 }
 /* tablet */
 @media screen and (max-width: 1023.98px) {
@@ -1446,6 +1469,10 @@ Luyendv
   }
   .hide-mobile {
     display: none !important;
+  }
+  .product-company__info .__company-name {
+    padding-right: 12px;
+    max-width: 510px;
   }
 }
 
@@ -1479,5 +1506,14 @@ Luyendv
     gap: 7px;
     font-size: 15px;
     line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .product-company__info .__company-name {
+    flex-direction: column;
+  }
+  .product-company__info .__info {
+    padding-left: 0;
   }
 }
