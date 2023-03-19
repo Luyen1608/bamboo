@@ -4,13 +4,13 @@
   gap: 20px;
   overflow: auto;
 }
-.slick-prev,
+/* .slick-prev,
 .slick-next {
   color: #000;
   padding: 8px 16px;
   background-color: #fff;
   border-radius: 100%;
-}
+} */
 .slick-dots::-webkit-scrollbar {
   display: none;
 }
@@ -565,9 +565,8 @@
   flex-direction: column;
   gap: 10px;
 }
-.wrap-product__desc-row{
+.wrap-product__desc-row {
   display: flex;
-  
 }
 .wrap-product__desc-row p {
   font-weight: 400;
@@ -772,7 +771,25 @@
   padding-bottom: 14px;
   display: block;
 }
+.__company-link {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  gap: 60px;
+  width: 100%;
+  justify-content: center;
+}
+.__company-link li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 32px;
+  text-decoration-line: underline;
 
+  color: rgba(1, 132, 211, 0.75);
+}
 .product-company__info .__company-name a {
   background-color: #395319;
   color: #fff;
@@ -1179,6 +1196,12 @@ Luyendv
   .collection-filter {
     width: 18%;
   }
+  .col-xl-9 {
+    flex: 1;
+  }
+  .col-xl-82 {
+    flex: 1;
+  }
   .product-link__submit .filter__submit {
     min-width: 130px;
   }
@@ -1217,11 +1240,19 @@ Luyendv
   .wrap-product__desc-row h3 {
     font-size: 16px;
     line-height: 28px;
-  
   }
   .wrap-product__desc-row span {
     font-size: 16px;
     line-height: 25px;
+  }
+  .__company-link {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .__company-link li a{
+    gap: 10px;
+    font-size: 15px;
+    line-height: 32px;
   }
 }
 
@@ -1262,11 +1293,19 @@ Luyendv
   .wrap-product__desc-row h3 {
     font-size: 18px;
     line-height: 28px;
-  
   }
   .wrap-product__desc-row span {
     font-size: 18px;
     line-height: 28px;
+  }
+  .__company-link {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .__company-link li a{
+    gap: 10px;
+    font-size: 16px;
+    line-height: 32px;
   }
 }
 /* tablet */
@@ -1300,7 +1339,6 @@ Luyendv
   .wrap-product__desc-row h3 {
     font-size: 14px;
     line-height: 28px;
-  
   }
   .wrap-product__desc-row span {
     font-size: 14px;
@@ -1315,12 +1353,33 @@ Luyendv
     font-size: 15px;
     line-height: 18px;
   }
+  .__company-link {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .__company-link li a{
+    gap: 10px;
+    font-size: 14px;
+    line-height: 32px;
+  }
 }
 
 /* mobile */
 @media screen and (max-width: 767.98px) {
   .product__info {
     margin-top: 4vh;
+  }
+  .__company-link {
+    margin-top: 18px;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .__company-link li a{
+    gap: 10px;
+    font-size: 14px;
+    line-height: 32px;
   }
   .producer__location .__inner {
     font-size: 12px;
@@ -1372,7 +1431,6 @@ Luyendv
   .wrap-product__desc-row h3 {
     font-size: 14px;
     line-height: 28px;
-  
   }
   .wrap-product__desc-row span {
     font-size: 14px;

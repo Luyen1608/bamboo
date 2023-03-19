@@ -7,7 +7,59 @@
     <title>Chi tiết chào hàng</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dc700a75c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/dc700a75c1.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link swiper slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- link swiper slider -->
+
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
@@ -329,25 +381,33 @@
                     </a>
                   </div>
                   <div class="__inner">
-                    <a href="" class="product-cat__title mb-0">
-                      Thương hiệu<img src="./assets/img/down02.svg" alt="" />
+                    <a href="" class="product-cat__title">
+                      Loại chào hàng<img src="./assets/img/up.svg" alt="" />
                     </a>
-                  </div>
-                  <div class="__inner">
-                    <a href="" class="product-cat__title"> Khoảng giá </a>
-                    <div class="form-group-site d-flex">
+                    <div class="mb-3 form-check">
                       <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Từ"
+                        type="checkbox"
+                        class="form-check-input"
+                        id="Check6"
+                        checked
                       />
-                      <span>~</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Đến"
-                      />
+                      <label class="form-check-label" for="Check6"
+                        >Chào hàng tiêu biểu</label
+                      >
                     </div>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="Check7"
+                      />
+                      <label class="form-check-label" for="Check7"
+                        >Chào hàng không tiêu biểu</label
+                      >
+                    </div>
+                  
+
+                    
                   </div>
                   <div class="form__under">
                     <button class="filter__submit" type="submit">
@@ -362,21 +422,16 @@
                 <ul class="breadcrumb-site d-flex align-items-center">
                   <li class="__item">
                     <a href="#"
-                      ><img src="./assets/img/cib_bamboo.svg" alt="" />Đồ bếp</a
+                      ><img src="./assets/img/chaoban-breadcump-icon.svg" alt="" />Chào hàng</a
                     >
                   </li>
                   <li class="__item">
-                    <a href="#">Đèn tre</a>
+                    <a href="#">Chào hàng bán</a>
                   </li>
                   <li class="__item">
-                    <a href="#">Đèn tròn 2</a>
+                    <a href="#">MSP02304</a>
                   </li>
-                  <li class="__item">
-                    <span
-                      >Giỏ Đựng Quần Áo Mây Tre, Kèm Vải Lót, Decor, Có Nắp, Đủ
-                      Size</span
-                    >
-                  </li>
+                  
                 </ul>
                 <div class="filter-main-btn">
                   <span class="filter-btn btn btn-theme"
@@ -448,21 +503,37 @@
                 <div class="__company-name d-flex">
                   <img src="./assets/img/tp1.png" alt="" />
                   <div class="__name">
-                    <h3>Công ty TNHH hòa phát</h3>
-                    <span>350 sản phẩm</span>
-                    <a href="#">Xem shop</a>
+                    <h3 style="color: #0184D3; margin-bottom: 10px;">Công ty TNHH hòa phát</h3>
+                    <span>Địa chỉ: Trụ sở chính 156A, Quán Thánh, Ba Đình, Hà Nội</span>
+                    <span>
+                      Website: congtytnhhmothanhvienhoaphat.com.vn
+                    </span>
                   </div>
                 </div>
                 <div class="__info">
-                  <div class="__item">Năm thành lập: 2019</div>
+                  <div class="__item">Họ tên người liên hệ: Đoàn Thành Văn</div>
                   <div class="__item">Số điện thoại : 0123-4567-789</div>
                   <div class="__item">
-                    <a href="#">Website: https://congtytnhhhoaphat.com.vn/</a>
+                    <a href="#">Số điện thoại: 0123-456-567</a>
                   </div>
                   <div class="__item">
-                    Địa chỉ: Thành phố Vinh, Tỉnh Nghệ An
+                    Số Fax: (+84-24) 3716 4842
                   </div>
                 </div>
+                <ul class="__company-link">
+                  <li>
+                    <img src="./assets/img/hand-dots.svg" alt="">
+                    <a href="#">
+                      Xem thêm hàng chào cùng thể loại
+                    </a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/hand-dots.svg" alt="">
+                    <a href="#">
+                      Xem thêm hàng chào cùng thành viên
+                    </a>
+                  </li>
+                </ul>
               </div>
 
               <div class="product-desc__block">
@@ -682,6 +753,7 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"
   ></script>
+  <script src="./assets/js/custom.js"></script>
   <script src="./assets/js/app.js"></script>
 
   <script>
@@ -689,9 +761,9 @@
     $(".pr-slider").slick({
       dots: true,
       prevArrow:
-        '<a class="slick-prev" href="#"> <i class="fa-solid fa-chevron-left"></i></a>',
+        '<a class="slick-prev" href="#"><i data-icon="ei-arrow-left" data-size="m"></i></a>',
       nextArrow:
-        '<a class="slick-next" href="#"> <i class="fa-solid fa-chevron-right"></i></a>',
+        '<a class="slick-next" href="#"><i data-icon="ei-arrow-right" data-size="m"></i></a>',
       customPaging: function (slick, index) {
         var targetImage = slick.$slides.eq(index).find("img").attr("src");
         return '<img src=" ' + targetImage + ' "/>';
