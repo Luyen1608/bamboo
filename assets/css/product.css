@@ -4,13 +4,14 @@
   gap: 20px;
   overflow: auto;
 }
-.slick-prev, .slick-next{
+.slick-prev,
+.slick-next {
   color: #000;
   padding: 8px 16px;
   background-color: #fff;
   border-radius: 100%;
 }
-.slick-dots::-webkit-scrollbar{
+.slick-dots::-webkit-scrollbar {
   display: none;
 }
 .slick-arrow {
@@ -561,8 +562,33 @@
   flex: 1;
   width: calc(60% - 60px);
   padding-left: 2vw;
+  flex-direction: column;
+  gap: 10px;
 }
+.wrap-product__desc-row{
+  display: flex;
+  
+}
+.wrap-product__desc-row p {
+  font-weight: 400;
+  min-width: 150px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #303030;
+}
+.wrap-product__desc-row h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
 
+  color: #303030;
+}
+.wrap-product__desc-row span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #303030;
+}
 .product__name {
   font-size: 20px;
   font-weight: 600;
@@ -1150,8 +1176,8 @@ Luyendv
 /* only 1024 */
 
 @media screen and (min-width: 1024px) and (max-width: 1030px) {
-  .collection-filter{
-    width:  18%;
+  .collection-filter {
+    width: 18%;
   }
   .product-link__submit .filter__submit {
     min-width: 130px;
@@ -1178,10 +1204,24 @@ Luyendv
     padding: 15px 0;
     width: 180px;
     margin-top: 40px;
-    
+
     gap: 7px;
     font-size: 16px;
     line-height: 20px;
+  }
+  .wrap-product__desc-row p {
+    min-width: 130px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .wrap-product__desc-row h3 {
+    font-size: 16px;
+    line-height: 28px;
+  
+  }
+  .wrap-product__desc-row span {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 
@@ -1214,6 +1254,20 @@ Luyendv
     font-size: 16px;
     line-height: 20px;
   }
+  .wrap-product__desc-row p {
+    min-width: 140px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .wrap-product__desc-row h3 {
+    font-size: 18px;
+    line-height: 28px;
+  
+  }
+  .wrap-product__desc-row span {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 /* tablet */
 
@@ -1221,7 +1275,7 @@ Luyendv
   .product__info {
     margin-top: 30px;
   }
-  .producer__location{
+  .producer__location {
     flex-direction: column;
   }
   .product__info p {
@@ -1238,7 +1292,20 @@ Luyendv
     font-size: 16px;
     line-height: 20px;
   }
-
+  .wrap-product__desc-row p {
+    min-width: 130px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .wrap-product__desc-row h3 {
+    font-size: 14px;
+    line-height: 28px;
+  
+  }
+  .wrap-product__desc-row span {
+    font-size: 14px;
+    line-height: 25px;
+  }
   .product__contact-btn {
     padding: 13px 0;
     width: 150px;
@@ -1255,7 +1322,7 @@ Luyendv
   .product__info {
     margin-top: 4vh;
   }
-  .producer__location .__inner{
+  .producer__location .__inner {
     font-size: 12px;
   }
   .product__info p {
@@ -1267,7 +1334,6 @@ Luyendv
     font-size: 20px;
     line-height: 28px;
     margin-top: 50px;
-  
   }
   .product__view {
     font-size: 20px;
@@ -1278,7 +1344,7 @@ Luyendv
     padding: 17px 0;
     width: 195px;
     margin-top: 65px;
-    
+
     gap: 7px;
     font-size: 16px;
     line-height: 20px;
@@ -1286,7 +1352,7 @@ Luyendv
   .product-item-date {
     gap: 5px;
   }
-  .product-item-date img{
+  .product-item-date img {
     width: 15px;
   }
   .l-product__item span {
@@ -1298,15 +1364,29 @@ Luyendv
     line-height: 22px;
     display: block;
   }
+  .wrap-product__desc-row p {
+    min-width: 130px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .wrap-product__desc-row h3 {
+    font-size: 14px;
+    line-height: 28px;
+  
+  }
+  .wrap-product__desc-row span {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 /* tablet */
 @media screen and (max-width: 1023.98px) {
-  .product-item-date{
+  .product-item-date {
     flex-direction: column;
     align-items: flex-start;
     gap: 0px;
   }
-  .hide-mobile{
+  .hide-mobile {
     display: none !important;
   }
 }
@@ -1315,7 +1395,7 @@ Luyendv
   .product__info {
     margin-top: 20px;
   }
-  .producer__location .__inner{
+  .producer__location .__inner {
     font-size: 12px;
   }
   .product__info p {
