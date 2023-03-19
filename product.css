@@ -1,5 +1,16 @@
 /*======== style for product page ========*/
+.slick-dots{
 
+}
+.slick-prev, .slick-next{
+  border: 1px solid black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 100%;
+}
+.slick-dots::-webkit-scrollbar{
+  display: none;
+}
 .wrap__product-filter {
   position: sticky;
   top: 0px;
