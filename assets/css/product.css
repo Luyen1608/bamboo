@@ -1333,7 +1333,7 @@ Luyendv
   .product__price {
     font-size: 20px;
     line-height: 28px;
-    margin-top: 50px;
+    margin-top: 2vh;
   }
   .product__view {
     font-size: 20px;
@@ -1343,8 +1343,8 @@ Luyendv
   .product__contact-btn {
     padding: 17px 0;
     width: 195px;
-    margin-top: 65px;
 
+    margin-top: 3vh;
     gap: 7px;
     font-size: 16px;
     line-height: 20px;

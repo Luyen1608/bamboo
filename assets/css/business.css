@@ -274,7 +274,7 @@
 }
 .sort-bar.sort-bar__filter .form-select {
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.39);
+  border: var(--bs-border-width) solid var(--bs-border-color);
   height: 45px;
   display: flex;
   justify-content: center;
@@ -288,6 +288,7 @@
   height: 46px;
   width: 212px;
   border-radius: 6px;
+  border: var(--bs-border-width) solid var(--bs-border-color);
 }
 .wrap__breadcrumbs {
   background: linear-gradient(90deg, #cfe8b0 0%, #ffffff 100%);
@@ -801,7 +802,6 @@
   }
   .sort-bar.sort-bar__filter .form-select {
     height: 35px;
-
     padding: 10px 18px;
   }
   .fimgorm-select {
@@ -809,3 +809,14 @@
     width: 180px;
   }
 }
+@media only screen and (max-width: 1600px){
+  .fimgorm-select option {
+      font-size: 16px;
+      font-weight: 600;
+  }}
+@media only screen and (max-width: 1200px){
+.fimgorm-select option {
+    font-size: 14px;
+    font-weight: 600;
+}}
+
