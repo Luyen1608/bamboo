@@ -1,4 +1,8 @@
-.p-lr-2{
+.product-desc__block h3 a img {
+    height: 21px;
+    width: 21px;
+  }
+  .p-lr-2{
     padding: 0 0.5rem;
 }
 .border-radius-10{
