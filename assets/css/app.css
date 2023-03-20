@@ -2844,6 +2844,9 @@ a:hover {
   object-fit: contain;
   border-radius: 50%;
 }
+.logo-ico img{
+  border-radius: 50%;
+}
 .top-product-list p {
   font-size: 14px;
   text-align: center;

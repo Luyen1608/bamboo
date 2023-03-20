@@ -601,6 +601,7 @@
   display: grid;
   grid-template-columns: 100px auto;
   padding: 20px;
+  gap: 10px;
 }
 .container-al[role="business"] .business-logo .wrap-info .name {
   font-weight: 600;
