@@ -438,6 +438,11 @@
 
   color: rgba(48, 48, 48, 0.8) !important;
 }
+.l-product__item .producer__location a, .__inner.--location{
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+}
 .l-product__item .__desc .__price {
   color: #0184d3;
   font-size: 20px;
@@ -481,7 +486,7 @@
   display: flex;
   align-items: flex-start;
   gap: 3px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
 }
 
@@ -756,7 +761,7 @@
   gap: 15px;
   padding-right: 4vw;
   border-right: 1px solid #959ead;
-  max-width: 450px;
+  max-width: 590px;
 }
 .product-company__info .__company-name img {
   width: 120px;
@@ -1463,9 +1468,8 @@ Luyendv
 /* tablet */
 @media screen and (max-width: 1023.98px) {
   .product-item-date {
-    flex-direction: column;
     align-items: flex-start;
-    gap: 0px;
+    gap: 10px;
   }
   .hide-mobile {
     display: none !important;
@@ -1506,6 +1510,18 @@ Luyendv
     gap: 7px;
     font-size: 15px;
     line-height: 18px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .l-product__item .producer__location a{
+    font-size: 12px;
+  }
+  .product-item-date{
+    flex-direction: column;
+
+  }
+  .product-item-date p ~ p{
+    margin-left: 18px;
   }
 }
 
