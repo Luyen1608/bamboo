@@ -752,7 +752,7 @@
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 30px;
+  row-gap: 2vh;
   align-items: center;
 }
 
@@ -780,7 +780,7 @@
 .__company-link {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 1vh;
   gap: 60px;
   width: 100%;
   justify-content: center;
@@ -1255,7 +1255,7 @@ Luyendv
     line-height: 25px;
   }
   .__company-link {
-    margin-top: 30px;
+    margin-top: 1vh;
     gap: 30px;
   }
   .__company-link li a {
@@ -1312,7 +1312,7 @@ Luyendv
     line-height: 28px;
   }
   .__company-link {
-    margin-top: 30px;
+    margin-top: 1vh;
     gap: 30px;
   }
   .__company-link li a {
@@ -1374,7 +1374,7 @@ Luyendv
     line-height: 18px;
   }
   .__company-link {
-    margin-top: 20px;
+    margin-top: 1vh;
     gap: 20px;
   }
   .__company-link li a {
@@ -1394,7 +1394,7 @@ Luyendv
     margin-top: 4vh;
   }
   .__company-link {
-    margin-top: 18px;
+    margin-top: 1vh;
     gap: 20px;
     justify-content: flex-start;
     flex-direction: column;
