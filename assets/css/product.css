@@ -342,7 +342,7 @@
 
 .l-product__item {
   border-radius: 12px;
-  width: 100%;
+  width: calc(100%/2 - 15px);
   border: 1px solid #dddfe3;
   padding: 24px;
   position: relative;

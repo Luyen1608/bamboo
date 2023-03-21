@@ -1,3 +1,6 @@
+$(document).ready(function() {
+  $(".cart-btn").attr('data-content', 9);
+});
 $('.filter-btn').on('click', function (e) {
     $('.collection-filter').css("left", "-15px");
 });
