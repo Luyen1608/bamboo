@@ -1465,7 +1465,8 @@
   align-items: center;
 }
 .cart-content .cart-table .cart-table-row .left {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25px 74px auto;
   align-items: center;
   gap: 10px;
 }
@@ -1473,6 +1474,7 @@
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  object-fit: contain;
 }
 .cart-content .cart-table .cart-table-row .left span {
   font-weight: 500;
@@ -1752,7 +1754,7 @@
     font-size: 12px;
   }
   .cart-content .cart-table .cart-table-row .right .price-wrap {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .cart-content .cart-detail-header h2 {
     font-size: 18px;
@@ -4004,3 +4006,62 @@ a:hover {
   width: 74px;
   height: 74px;
 }
+.cart-content .cart-table .cart-table-row .right .price-wrap {
+  width: 100%;
+  justify-content: space-around;
+}
+.cart-content .cart-table .cart-table-row .right .price {
+  text-align: center;
+  width: calc(calc(100% - 200px)/2);
+}
+@media screen and (min-width: 1024px) and (max-width: 1030px){
+.img-cart {
+    width: 70px;
+    height: 70px;
+}}
+@media screen and (max-width: 767px){
+  .img-cart {
+    width: 40px;
+    height: 40px;
+}
+.cart-content .cart-table .cart-table-row .left {
+    display: grid;
+    grid-template-columns: 20px 40px auto;
+}
+}
+@media screen and (min-width: 1600px){
+.cart-content .cart-table .cart-table-row .right {
+    gap: 50px;
+}
+.cart-content .cart-table .cart-table-row .right .price-wrap {
+  gap: 20px !important;
+}
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media screen and (max-width: 600px){
+  .cart-content .cart-table .cart-table-row .left {
+      display: flex;
+  }
+  .cart-content .cart-table .cart-table-row .right .price-wrap {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1555px){
+.cart-content .cart-table .cart-table-row .right {
+    justify-content: flex-end;
+    gap: 10px;
+}
+.cart-content .cart-table .cart-table-row .right .price {
+  text-align: center;
+  width: calc(calc(100% - 150px)/2);
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023.98px){
+.cart-content .cart-table .cart-table-row .right .price {
+  width: calc(calc(100% - 100px)/2);
+}}
