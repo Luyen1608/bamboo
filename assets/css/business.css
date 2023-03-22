@@ -821,3 +821,62 @@
     font-weight: 600;
 }}
 
+/* doanh nghiep 3 -vu */
+
+.business-3 .wrap__business-filter .business-cat__title{
+  border-bottom: 4px solid #3DAD91;
+  background:unset;
+  padding: 0;
+  margin-left: 15px;
+  border-radius: 0;
+  padding-bottom: 5px;
+}
+.business-3 .wrap__business-filter.categories .__inner ul a:hover{
+  background: linear-gradient(90deg, #3DAD91 0%, #FFFFFF 100%);
+}
+
+.business-3 .wrap__business-filter.categories .__inner{
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+.business-3 .wrap__business-filter.categories .__inner ul a{
+  margin-left: 0;
+  padding-left: 15px;
+}
+.business-3 .wrap__business-filter .__inner.info:not(:last-child) .info-wrapper::after{
+  background: linear-gradient(90deg, #3DAD91 0%, #FFFFFF 100%);
+
+}
+
+.business-3 .wrap__breadcrumbs{
+  background: linear-gradient(90deg, #3DAD91 0%, #FFFFFF 100%);
+  color: #fff;
+
+}
+.business-3 .breadcrumb-site .__item a{
+  color: #fff;
+}
+
+.business-3 .breadcrumb-site .__item span{
+  color: #fff;
+}
+.business-3 .breadcrumb-site .__item:not(:last-child)::after {
+  background-image: url(../img/right-icon-white.svg);
+  background-size: 8px;
+}
+
+.business-3 .option-select__item input:checked ~ .checkmark{
+  background-color: #3DAD91;
+
+}
+
+.business-3 .filter__submit {
+  background-color: #3DAD91;
+  border: none;
+}
+.business-3 .filter__submit.--bg-white{
+  border: 1px solid #303030;
+  background-color: #fff;
+}
