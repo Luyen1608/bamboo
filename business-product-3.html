@@ -106,6 +106,12 @@
       <div class="pt-5 overflow-hidden">
         <div class="row">
           <div class="col-xl-18 col-lg-4 pb-5 collection-filter">
+            <div class="collection-mobile-back">
+              <span class="filter-back"
+                ><i class="fa fa-angle-left" aria-hidden="true"></i> Quay
+                lại</span
+              >
+            </div>
             <aside class="wrap__business-filter categories">
                 <div class="__inner">
                   <a href="" class="business-cat__title">
@@ -204,7 +210,12 @@
                   <a href="#"><img src="./assets/img/carbon_carbon-for-ibm-product.png" alt="" />Sắp xếp theo:</a>
                 </li>
               </ul>
-
+              <div class="filter-main-btn">
+                <span class="filter-btn btn btn-theme"
+                  ><i class="fa fa-filter" aria-hidden="true"></i>
+                  Filter</span
+                >
+              </div>
               <div class="wrap__filter-sort">
                 <div class="sort-bar sort-bar__filter d-flex align-items-center">
                   <div class="form-select">
@@ -597,6 +608,15 @@
   $(document).ready(function () {
     checkSize();
   });
+  $(".filter-btn").on("click", function (e) {
+    $(".collection-filter").css("left", "-15px");
+  });
+  $(".filter-back").on("click", function (e) {
+    $(".collection-filter").css("left", "-365px");
+    $(".sidebar-popup").trigger("click");
+  });
+</script>
+<script type="text/javascript">
   $(".filter-btn").on("click", function (e) {
     $(".collection-filter").css("left", "-15px");
   });

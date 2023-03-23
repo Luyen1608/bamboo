@@ -138,6 +138,12 @@
                 <div class="pt-5 overflow-hidden">
                     <div class="row">
                         <div class="col-xl-18 col-lg-3 pb-5 collection-filter">
+                          <div class="collection-mobile-back">
+                            <span class="filter-back"
+                              ><i class="fa fa-angle-left" aria-hidden="true"></i> Quay
+                              lại</span
+                            >
+                          </div>
                             <aside class="wrap__business-filter categories">
                                 <div class="__inner">
                                   <a href="" class="business-cat__title">
@@ -246,6 +252,12 @@
                                 <a href="#">MSP02304</a>
                               </li>
                             </ul>
+                            <div class="filter-main-btn">
+                              <span class="filter-btn btn btn-theme"
+                                ><i class="fa fa-filter" aria-hidden="true"></i>
+                                Filter</span
+                              >
+                            </div>
                           </div>
                           <div class="wrap-product__detail d-flex pl-3 pr-3">
                             <div class="wrap-product__slider">
@@ -592,6 +604,15 @@
         $( document ).ready(function() {
             checkSize();
         });
+    </script>
+    <script type="text/javascript">
+      $(".filter-btn").on("click", function (e) {
+        $(".collection-filter").css("left", "-15px");
+      });
+      $(".filter-back").on("click", function (e) {
+        $(".collection-filter").css("left", "-365px");
+        $(".sidebar-popup").trigger("click");
+      });
     </script>
     <style>
        @media (max-width: 1100px){
