@@ -181,6 +181,9 @@
 @media screen and (min-width: 1024px) and (max-width: 1030px) {
  .col-lg-8{
  }
+ .wrap__business-filter .__inner.info .info-wrapper{
+  grid-template-columns: unset;
+ }
   .header-left img {
     width: 32px;
   }
