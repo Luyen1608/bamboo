@@ -179,6 +179,8 @@
 /* only 1024 */
 
 @media screen and (min-width: 1024px) and (max-width: 1030px) {
+ .col-lg-8{
+ }
   .header-left img {
     width: 32px;
   }
