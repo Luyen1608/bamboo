@@ -112,7 +112,9 @@
   .product__price {
     margin-top: 4px;
   }
-
+  .wrap__business-filter {
+    position: unset !important;
+  }
   .product__contact-btn {
     margin-top: 4px;
   }
