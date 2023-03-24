@@ -75,7 +75,9 @@
   width: fit-content;
   margin-top: 5px;
 }
-
+.categories{
+  display: block;
+}
 /* small mobile */
 
 @media screen and (max-width: 375px) {
