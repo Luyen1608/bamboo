@@ -185,9 +185,10 @@
 }
 .wrap__business-filter .__inner.info .info-wrapper {
   display: grid;
-  grid-template-columns: 40px auto;
+  grid-template-columns: 30px auto;
   padding: 12px 0;
   width: 100%;
+  align-items: center;
   position: relative;
 }
 .wrap__business-filter .__inner.info .info-wrapper.logo {
