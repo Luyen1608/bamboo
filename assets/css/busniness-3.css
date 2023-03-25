@@ -185,15 +185,13 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1030px) {
   .content .list .item .prices {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
   }
   .wrap__business-filter .__inner.info .info-content {
     display: flex;
     flex-direction: column;
   }
   .wrap__business-filter .__inner.info .info-content strong{
-    margin-left: -39px;
   } 
   .not-ml{
     margin-left: 0px !important;
