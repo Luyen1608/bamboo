@@ -671,7 +671,7 @@
   }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) and (min-width:992) {
   .form-check-label {
     font-size: 14px;
   }
@@ -681,16 +681,9 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1480px) {
   .col-xl-18 {
-    width: 25%;
+    width: 33.3333%;
   }
 }
-
-@media screen and (min-width: 1024px) and (max-width: 1030px) {
-  .col-xl-18 {
-    width: 25%;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   .l-business__item {
     grid-template-columns: unset;
