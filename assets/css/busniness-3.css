@@ -39,6 +39,17 @@
   color: #fff;
 }
 
+
+.business-3 .wrap__business-filter.categories .__inner ul a {
+}
+.wrap__business-filter.categories .__inner ul a.active{
+  background: #3dad91;
+  
+} 
+a.active::before{
+  display: none;
+}
+
 .business-3 .breadcrumb-site .__item:not(:last-child)::after {
   background-image: url(../img/right-icon-white.svg);
   background-size: 8px;
