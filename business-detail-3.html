@@ -122,7 +122,7 @@
       <div class="content p-content bg-gray-2">
         <div class="pt-5 ">
           <div class="row">
-            <div class="col-xl-18 col-lg-3 pb-5 collection-filter">
+            <div class="col-lg-3 pb-5 collection-filter">
               <div class="collection-mobile-back">
                 <span class="filter-back"
                   ><i class="fa fa-angle-left" aria-hidden="true"></i> Quay
@@ -221,7 +221,7 @@
               </aside> -->
             </div>
 
-            <div class="col-xl-82 col-lg-9 pb-3">
+            <div class="col-lg-9 pb-3">
               <div class="wrap__breadcrumbs boder-up">
                 <ul class="breadcrumb-site d-flex align-items-center">
                   <li class="__item">
@@ -244,49 +244,49 @@
                 <div class="business-desc__block business-info-header">
                   <ul class="wrap-info__business-detail">
                     <li class="business-info__row row ">
-                      <div class="col-12 col-lg-6 d-flex align-items-center gap-4">
-                        <h4>Tên công ty</h4>
+                      <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center gap-2">
+                        <h4>Tên công ty:</h4>
                         <div class="__right">
                           Công ty TNHH Hòa Phát
                         </div>
                       </div>
-                      <div class="col-12 col-lg-6 d-flex align-items-center gap-4">
-                        <h4>Tên công ty</h4>
+                      <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center gap-2">
+                        <h4>Mã số thuế:</h4>
                         <div class="__right">
-                          Công ty TNHH Hòa Phát
+                          0123456789
                         </div>
                       </div>
                     </li>
                     <li class="business-info__row row ">
-                      <div class="col-12 col-lg-6 d-flex align-items-center gap-4">
+                      <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center gap-2">
                         <h4>Người liên hệ:</h4>
                         <div class="__right">
                           Trần Anh Dũng
                         </div>
                       </div>
-                      <div class="col-12 col-lg-6 d-flex align-items-center gap-4">
-                        <h4>Số điện thoạ<i:></i:></h4>
+                      <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center gap-2">
+                        <h4>Số điện thoại<i:></i:></h4>
                         <div class="__right">
                           098-987-7846
                         </div>
                       </div>
                     </li>
                     <li class="business-info__row row ">
-                      <div class="col-12 col-lg-6 d-flex align-items-center gap-4">
+                      <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center gap-2">
                         <h4>Email:</h4>
                         <div class="__right">
                           congtyhoaphat@gmail.com
                         </div>
                       </div>
-                      <div class="col-12 col-lg-6 d-flex align-items-center gap-4">
+                      <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center gap-2">
                         <h4>Website:</h4>
                         <div class="__right">
-                          congtytnhhhoaphat.com.vn
+                          congtyhoaphat.com.vn
                         </div>
                       </div>
                     </li>
                     <li class="business-info__row row ">
-                      <div class="col-12 d-flex align-items-center gap-4 ">
+                      <div class="col-12 d-flex align-items-center gap-2 ">
                         <h4>Địa chỉ:</h4>
                         <div class="__right">
                           Số 24/34 đường giải phóng, Ấp thới hòa, xã vĩnh thới Lai vung Đồng tháp, Miền Bắc Việt Nam
@@ -511,5 +511,25 @@
           padding: 10px 0;
       }
     }
+    .business-info__row .__right{
+      max-width: fit-content;
+    }
+    @media screen and (max-width: 767.98px){
+    .business-info__row .d-flex {
+        flex-direction: inherit;
+    }
+    .business-info-header .business-info__row{
+      gap: 14px
+    }
+  }
+  @media screen and (max-width: 450px){
+    .business-info__row .d-flex {
+        flex-direction: column;
+        gap: 0px !important;
+    }
+    .business-info-header .business-info__row{
+      display: flex !important;
+    }
+  }
   </style>
 </html>
