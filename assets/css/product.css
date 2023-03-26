@@ -41,7 +41,8 @@
 .search-wrap input {
   padding: 11px 16px;
   font-weight: 400;
-  width: 468px;
+  max-width: 468px;
+  min-width: 315px;
   font-size: 16px;
   line-height: 24px;
   color: #8b919a;
@@ -82,7 +83,7 @@
   margin-bottom: 20px;
 }
 .product__info {
-  margin-top: 70px;
+  margin-top: 1vh;
 }
 .product__info p {
   font-weight: 600;
@@ -98,7 +99,6 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  margin-top: 50px;
 
   color: #4189cc;
 }
@@ -117,7 +117,6 @@
   border-radius: 6px;
   cursor: pointer;
   display: flex;
-  margin-top: 65px;
   align-items: center;
   justify-content: center;
   gap: 7px;
@@ -1212,7 +1211,7 @@ Luyendv
     flex: 1;
   }
   .product-link__submit .filter__submit {
-    min-width: 130px;
+    min-width: 40%;
   }
   .product__info {
     margin-top: 50px;
@@ -1282,7 +1281,6 @@ Luyendv
   .product__price {
     font-size: 20px;
     line-height: 28px;
-    margin-top: 50px;
   }
   .product__view {
     font-size: 20px;
@@ -1292,7 +1290,6 @@ Luyendv
   .product__contact-btn {
     padding: 17px 0;
     width: 195px;
-    margin-top: 65px;
 
     gap: 7px;
     font-size: 16px;

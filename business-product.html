@@ -266,9 +266,9 @@
                       đan....
                     </div>
                     <div class="prices">
-                      <span class="tag d-flex"> <img src="./assets/img/tag-icon.png" alt=""> </span>
-                      <div class="price"><span>2.000.000</span> đ</div>
-                      <div class="old-price">6.000.000 đ</div>
+                      <div class="price"><span class="tag d-flex"> <img src="./assets/img/tag-icon.png" alt=""> </span>
+                      <span>2.000.000 đ</span></div>
+                      <div class="old-price"><span class="tag d-flex">6.000.000 đ</div>
                     </div>
                     <div class="view">
                       <span class="eye d-flex">
@@ -634,11 +634,44 @@
       margin-bottom: 10px;
   }
   }
-  @media only screen and (max-width: 600px){
-    .wrap__breadcrumbs {
-    display: block;
-    }
+  .wrap__breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
   }
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .price img{
+    width: 20px;
+    height: 20px;
+  }
+  .content .list .item .prices {
+    flex-wrap: wrap;
+  }
+  .content .list .item .prices {
+    gap: 5px;
+  }
+  .old-price{
+    padding-left: 5px;
+  }
+  @media only screen and (max-width: 991px){
+.content .item.item-full .wrapper {
+    margin:0px;
+}}
+@media only screen and (max-width: 768px){
+.wrap__breadcrumbs ul {
+    margin-bottom: 0px;
+}}
+  @media screen and (min-width: 768px) and (max-width: 1023.98px){
+  .content .list .item .old-price {
+      font-size: 14px;
+  }}
+  @media only screen and (min-width: 480px) and (max-width: 991px){
+  .content .list.l-business__list {
+      grid-template-columns: repeat(2, 49%);
+  }}
 </style>
 
 </html>

@@ -1,4 +1,7 @@
-
+.div-26{
+    width: 26px;
+    height: 26px;
+}
 .footer-business .list{
     display: grid;
 }
@@ -209,14 +212,15 @@
 
     }
 }
+@media (max-width: 600px){
+    .d-block-600 {
+        display: block !important;
+    }
+}
 @media (max-width: 450px){
     .product-info__row {
         display: block;
     }
-    .d-block-450 {
-        display: block !important;
-    }
-    
 }
 footer .list{
     display: block;
