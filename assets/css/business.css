@@ -1002,3 +1002,6 @@
     column-gap: 0;
   }
 }
+.__verify.inactive .verify-title, .__verify.inactive .verify-img{
+  opacity: 0.4;
+}
