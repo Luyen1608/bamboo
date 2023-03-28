@@ -480,6 +480,8 @@
   integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 <script src="../../assets/js/app.js"></script>
 <script src="../../assets/js/custom.js"></script>
+<script src="../../assets/js/menu_style.js"></script>
+<link rel="stylesheet" href="../../assets/css/menu_style.css">
 <script type="text/javascript">
   $(".pr-slider").slick({
     dots: true,
@@ -491,15 +493,6 @@
       var targetImage = slick.$slides.eq(index).find("img").attr("src");
       return '<img src=" ' + targetImage + ' "/>';
     },
-  });
-</script>
-<script type="text/javascript">
-  $(".filter-btn").on("click", function (e) {
-    $(".collection-filter").css("left", "-15px");
-  });
-  $(".filter-back").on("click", function (e) {
-    $(".collection-filter").css("left", "-365px");
-    $(".sidebar-popup").trigger("click");
   });
 </script>
 <style>

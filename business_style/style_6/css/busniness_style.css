@@ -1,3 +1,7 @@
+.filter-main-btn{
+  background: linear-gradient(1deg, #EDC13B 0%, #ffffff 100%);
+  color: #fff;
+}
 .pagination-site .__item.current {
   background-color: #EDC13B;
 }
@@ -345,5 +349,39 @@ transition: 0.1s ease;
 @media only screen and (max-width: 480px) {
   .content .list.l-business__list {
     grid-template-columns: unset;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .collection-filter-2{
+    display: none;
+  }
+  #menu-header {
+    position: fixed !important;
+    height: 100vh;
+    top: 0;
+    /* left: -350px; */
+    background-color: white;
+    z-index: 99;
+    overflow-y: scroll;
+    padding: 15px 0 15px 15px;
+    width: 320px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 1px 0 5px #ddd;
+    box-shadow: 1px 0 5px #ddd;
+    display: block;
+  }
+
+  #menu-header .nav-tabs-ct {
+    display: block;
+  }
+
+  #menu-header .nav-tabs-ct .nav-link-ct {
+    width: 90%;
+  }
+
+  #menu-header .nav-item-ct {
+    text-align: center;
   }
 }

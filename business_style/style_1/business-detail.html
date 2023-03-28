@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" />
     <script
       src="https://kit.fontawesome.com/dc700a75c1.js"
       crossorigin="anonymous"
@@ -32,7 +36,7 @@
     <link rel="stylesheet" href="../../assets/css/custom.css" />
     <link rel="stylesheet" href="../style_1/css/busniness_style.css">
   </head>
-  <body onresize="checkSize()">
+  <body>
     <div class="wrapper business-3">
       <div class="pre-header">
         <div class="container-al p-content">
@@ -463,7 +467,6 @@
     </div>
   </body>
   <!-- latest jquery-->
-  <script src="../../assets/js/jquery-3.3.1.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -475,15 +478,9 @@
     crossorigin="anonymous"
   ></script>
   <script src="../../assets/js/app.js"></script>
-  <script type="text/javascript">
-    $(".filter-btn").on("click", function (e) {
-      $(".collection-filter").css("left", "-15px");
-    });
-    $(".filter-back").on("click", function (e) {
-      $(".collection-filter").css("left", "-365px");
-      $(".sidebar-popup").trigger("click");
-    });
-  </script>
+  <script src="../../assets/js/custom.js"></script>
+  <script src="../../assets/js/menu_style.js"></script>
+  <link rel="stylesheet" href="../../assets/css/menu_style.css">
   <style>
     @media only screen and (max-width: 991px){
       .wrap__breadcrumbs {

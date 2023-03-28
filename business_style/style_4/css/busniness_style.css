@@ -1,3 +1,7 @@
+.filter-main-btn{
+  background: linear-gradient(1deg, #CFE8B0 0%, #ffffff 100%);
+  color: #fff;
+}
 .pagination-site .__item.current {
   background-color: #CFE8B0;
 }

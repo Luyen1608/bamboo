@@ -6,7 +6,8 @@ $('.filter-back').on('click', function (e) {
     $('.sidebar-popup').trigger('click');
 });
 var coll = document.getElementsByClassName("collapsible-ct");
-coll[0].addEventListener("click", function() {
+if (coll[0]){
+  coll[0].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = document.getElementById('content-collapsible');
     if (content.style.display === "block") {
@@ -17,14 +18,17 @@ coll[0].addEventListener("click", function() {
     $("#showmore").html("Thu gọn");
     }
 });
-$(".pr-slider").slick({
-  dots: true,
-  prevArrow:
-    '<a class="slick-prev" href="#"> <i class="fa-solid fa-chevron-left"></i></a>',
-  nextArrow:
-    '<a class="slick-next" href="#"> <i class="fa-solid fa-chevron-right"></i></a>',
-  customPaging: function (slick, index) {
-    var targetImage = slick.$slides.eq(index).find("img").attr("src");
-    return '<img src=" ' + targetImage + ' "/>';
-  },
-});
+}
+if($(".pr-slider")){
+  $(".pr-slider").slick({
+    dots: true,
+    prevArrow:
+      '<a class="slick-prev" href="#"> <i class="fa-solid fa-chevron-left"></i></a>',
+    nextArrow:
+      '<a class="slick-next" href="#"> <i class="fa-solid fa-chevron-right"></i></a>',
+    customPaging: function (slick, index) {
+      var targetImage = slick.$slides.eq(index).find("img").attr("src");
+      return '<img src=" ' + targetImage + ' "/>';
+    },
+  });
+}

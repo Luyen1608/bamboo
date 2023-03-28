@@ -1,0 +1,1 @@
+$(".filter-main-btn").append("<div class='cart-btn' data-content='10'><img src='../../assets/img/cart-2.svg' alt=''></div>");
