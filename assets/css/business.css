@@ -1005,3 +1005,6 @@
 .__verify.inactive .verify-title, .__verify.inactive .verify-img{
   opacity: 0.4;
 }
+.verify-img.inactive{
+  opacity: 0.4;
+}
