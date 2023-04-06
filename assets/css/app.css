@@ -5047,5 +5047,10 @@ a:hover {
     padding-left: 14px;
   }
 }
-
+.logo-ico img{
+  border-radius: 50%;
+}
+.top-product-list img{
+  border-radius: 50%;
+}
 /*# sourceMappingURL=app.css.map */
