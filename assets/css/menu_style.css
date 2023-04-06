@@ -84,3 +84,18 @@
     font-size: 18px;
     color: inherit;
 }
+.demo-purchase::after {
+    position: absolute;
+    border-radius: 100%;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    right: 0px;
+    content: attr(data-content) !important;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
