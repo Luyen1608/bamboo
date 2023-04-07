@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -4036,6 +4038,10 @@ a:hover {
   width: calc(20% - 33px);
   position: relative;
 }
+.content .list-suggest .item {
+  width: calc(25% - 30px);
+  position: relative;
+}
 .content .list .item .sale {
   display: flex;
   justify-content: center;
@@ -4690,6 +4696,10 @@ a:hover {
   .content .list .item {
     width: calc(25% - 10px);
   }
+  .content .list-suggest .item {
+    width: calc(25% - 10px);
+    position: relative;
+  }
   .content .list .item img {
     max-height: 400px;
     object-fit: cover;
@@ -4891,6 +4901,11 @@ a:hover {
   .content .list .item {
     position: relative;
     width: calc(20% - 15px);
+    
+  }
+  .content .list-suggest .item {
+    width: calc(24% - 5px);
+    position: relative;
   }
   .content .list .item .name {
     font-size: 16px;
@@ -4939,6 +4954,10 @@ a:hover {
   .content .list .item {
     position: relative;
     width: calc(20% - 15px);
+  }
+  .content .list-suggest .item {
+    width: calc(24%);
+    position: relative;
   }
   .footer .logo-list {
     gap: 15px;
