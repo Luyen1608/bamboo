@@ -237,8 +237,8 @@
                   Số nhà 1504 thị trấn hòa bình - tỉnh thừa thiên huế - hà đông
                   - hà nội
                 </div>
-                <p href="#" class="address-card-btn"
-                  >Chỉnh sửa
+                <p href="#" class="address-card-btn">
+                  Chỉnh sửa
                   <i class="fa-solid fa-chevron-down"></i>
                 </p>
               </div>
@@ -363,7 +363,7 @@
                         <div
                           class="d-flex align-items-center justify-content-between"
                         >
-                          <p>Phí thu hộ 0đ</p>
+                          <p class="add-card">Chọn để thêm thẻ</p>
                           <img src="./assets/img/card-list.svg" alt="" />
                         </div>
                       </div>
@@ -645,6 +645,104 @@
           </div>
           <div class="right">
             <img src="./assets/img/checked.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="address-book-card-add">
+        <div class="address-book-card-add-header">
+          <p>Thêm thẻ</p>
+          <i class="fa-solid fa-xmark address-book-card-add"></i>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <p>Chi tiết thẻ</p>
+          <img src="./assets/img/card-list.svg" alt="" />
+        </div>
+        <div class="input-list">
+          <div class="input-row">
+            <p>Số thẻ <span>*</span></p>
+            <input type="text" placeholder="Nhập họ tên người mua tại đây..." />
+          </div>
+          <div class="input-wrap row">
+            <div class="col-lg-6 input-row">
+              <p>Ngày hết hạn  <span>*</span></p>
+              <input type="text" placeholder="MM/YY" />
+            </div>
+            <div class="col-lg-6 input-row">
+              <p>Mã CVV <span>*</span></p>
+              <input type="text" placeholder="Số CVV trên thẻ" />
+            </div>
+          </div>
+          <div class="input-row">
+            <p>Họ tên chủ thẻ <span>*</span></p>
+            <input type="text" placeholder="Nhập họ tên chủ thẻ..." />
+          </div>
+        </div>
+        <h3>
+          Địa chỉ đăng ký thẻ Tín dụng/Ghi nợ
+        </h3>
+       <div class="input-list">
+        <div class="input-row">
+          <p>Địa chỉ <span>*</span></p>
+          <input type="text" placeholder="Nhập địa chỉ đăng ký..." />
+        </div>
+        <div class="input-row">
+          <p>Mã bưu chính<span>*</span></p>
+          <input type="text" placeholder="MM/YY" />
+        </div>
+       </div>
+        <div class="address-book-card-add-actions">
+          <div class="back">
+            Trở lại
+          </div>
+          <div class="submit">
+            Xác nhận
+          </div>
+        </div>
+      </div>
+      <div class="address-book-address-add">
+        <div class="address-book-address-add-header">
+          <h2>Thêm địa chỉ</h2>
+          <i class="fa-solid fa-xmark address-book-address-add"></i>
+        </div>
+        <div class="input-list">
+          <div class="row input-wrap">
+            <div class="col-lg-6 input-row">
+              <p>
+                Họ tên <span>*</span>
+              </p>
+              <input type="text" placeholder="Nhập họ tên người mua tại đây...">
+            </div>
+            <div class="col-lg-6 input-row">
+              <p>Số điện thoại <span> *</span></p>
+              <input type="text" placeholder="Nhập số điện thoại tại đây...">
+            </div>
+          </div>
+          <div class="input-wrap row">
+            <div class="col-lg-4 input-row">
+              <p>Thành phố <span>*</span></p>
+              <input type="text" placeholder="Nhập thành phố...">
+            </div>
+            <div class="col-lg-4 input-row">
+              <p>Quận <span>*</span></p>
+              <input type="text" placeholder="Nhập quận...">
+            </div>
+            <div class="col-lg-4 input-row">
+              <p>Huyện <span>*</span></p>
+              <input type="text" placeholder="Nhập huyện...">
+            </div>
+          </div>
+          <div class="input-row">
+            <p>Địa chỉ cụ thể <span>*</span></p>
+            <textarea type="text" placeholder="Nhập địa chỉ người mua tại đây..." class="large"></textarea>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="checkbox">
+            <input type="checkbox">
+            <span>Đặt làm địa chỉ mặc định</span>
+          </div>
+          <div class="submit">
+            Hoàn thành
           </div>
         </div>
       </div>

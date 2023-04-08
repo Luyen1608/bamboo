@@ -37,3 +37,33 @@ shippingListOpenBtn.onclick = (e) => {
   console.log(1);
   document.querySelector(".shipping-list").classList.add("active");
 };
+
+
+const addressBookAddBtn = document.querySelector('.address-book-actions .btn')
+const addressCardAddBtn = document.querySelector('.add-card')
+const addressCardAdd = document.querySelector('.address-book-card-add')
+const addressBookAdd = document.querySelector('.address-book-address-add')
+const addressCardAddCloseBtn1 = document.querySelector('.address-book-card-add-actions .submit')
+const addressCardAddCloseBtn2 = document.querySelector('.address-book-card-add-actions .back')
+const addressBookAddCloseBtn = document.querySelector('.address-book-address-add .submit')
+addressBookAddBtn.onclick =() => {
+  addressBookAdd.classList.add('active')
+  document.querySelector(".address-book").classList.remove("active");
+}
+
+addressCardAddBtn.onclick = () => {
+  addressCardAdd.classList.add('active')
+}
+addressCardAddCloseBtn1.onclick = () => {
+  addressCardAdd.classList.remove('active')
+
+}
+addressCardAddCloseBtn2.onclick = () => {
+  addressCardAdd.classList.remove('active')
+
+}
+
+addressBookAddCloseBtn.onclick = () => {
+  addressBookAdd.classList.remove('active')
+
+}
