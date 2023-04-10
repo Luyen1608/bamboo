@@ -760,13 +760,16 @@
       padding: 10px 14px;
 
       .shipping-name {
-        font-size: 16px;
+        font-size: 14px;
       }
       .price {
-        font-size: 16px;
+        font-size: 14px;
       }
       & + .shipping-item {
         margin-top: 14px;
+      }
+      p{
+        font-size: 15px;
       }
     }
   }
@@ -1104,7 +1107,11 @@
   .address-book-card-add {
     width: 430px;
     padding: 20px;
-    position: fixed;
+    position: absolute;
+
+    &.active{
+      top: 50%;
+    }
     & > .d-flex {
       margin-bottom: 15px;
     }
@@ -1154,6 +1161,11 @@
   .address-book-address-add {
     width: 740px;
     padding: 20px;
+    position: absolute;
+
+    &.active{
+      top: 32%;
+    }
     &-header {
       h2 {
         font-size: 22px;

@@ -2930,7 +2930,7 @@
     font-size: 14px;
   }
   .payment-info .payment-info-submit {
-    padding: 12px 32px;
+    padding: 8px 32px;
     width: 200px;
     height: 35px;
     font-size: 14px;
@@ -3033,13 +3033,16 @@
     padding: 10px 14px;
   }
   .shipping-list .shipping-item .shipping-name {
-    font-size: 16px;
+    font-size: 14px;
   }
   .shipping-list .shipping-item .price {
-    font-size: 16px;
+    font-size: 14px;
   }
   .shipping-list .shipping-item + .shipping-item {
     margin-top: 14px;
+  }
+  .shipping-list .shipping-item p {
+    font-size: 15px;
   }
   .address-book-card-add {
     width: 340px;
@@ -3067,7 +3070,7 @@
     font-size: 16px;
   }
   .address-book-card-add .input-row input {
-    padding: 14px 20px 14px 24px;
+    padding: 8px 20px 8px 24px;
     font-size: 14px;
   }
   .address-book-card-add-actions {
@@ -3075,7 +3078,7 @@
     gap: 10px;
   }
   .address-book-card-add-actions .back {
-    padding: 8px 0;
+    padding: 7px 0;
     width: 80px;
     font-size: 14px;
   }
@@ -3107,7 +3110,7 @@
   }
   .address-book-address-add .input-row input,
 .address-book-address-add .input-row textarea {
-    padding: 10px 13px 13px 10px;
+    padding: 8px 13px 8px 10px;
     font-size: 12px;
   }
   .address-book-address-add .input-row .large {
@@ -3232,7 +3235,7 @@
     font-size: 14px;
   }
   .payment-info .payment-info-submit {
-    padding: 12px 32px;
+    padding: 8px 32px;
     width: 200px;
     height: 35px;
     font-size: 14px;
@@ -3339,7 +3342,10 @@
   .address-book-card-add {
     width: 430px;
     padding: 20px;
-    position: fixed;
+    position: absolute;
+  }
+  .address-book-card-add.active {
+    top: 50%;
   }
   .address-book-card-add > .d-flex {
     margin-bottom: 15px;
@@ -3382,6 +3388,10 @@
   .address-book-address-add {
     width: 740px;
     padding: 20px;
+    position: absolute;
+  }
+  .address-book-address-add.active {
+    top: 32%;
   }
   .address-book-address-add-header h2 {
     font-size: 22px;
