@@ -46,6 +46,7 @@ const addressBookAdd = document.querySelector('.address-book-address-add')
 const addressCardAddCloseBtn1 = document.querySelector('.address-book-card-add-actions .submit')
 const addressCardAddCloseBtn2 = document.querySelector('.address-book-card-add-actions .back')
 const addressBookAddCloseBtn = document.querySelector('.address-book-address-add .submit')
+const addAdDressCloseBtn = document.querySelector('.address-book-address-add .btn-close')
 addressBookAddBtn.onclick =() => {
   addressBookAdd.classList.add('active')
   document.querySelector(".address-book").classList.remove("active");
@@ -62,10 +63,11 @@ addressCardAddCloseBtn2.onclick = () => {
   addressCardAdd.classList.remove('active')
 
 }
-
 addressBookAddCloseBtn.onclick = () => {
   addressBookAdd.classList.remove('active')
-
+}
+addAdDressCloseBtn.onclick = () => {
+  addressBookAdd.classList.remove('active')
 }
 
 document.querySelector('.address-book-address-add-header i').onclick = () => {
