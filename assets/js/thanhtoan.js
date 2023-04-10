@@ -67,3 +67,12 @@ addressBookAddCloseBtn.onclick = () => {
   addressBookAdd.classList.remove('active')
 
 }
+
+document.querySelector('.address-book-address-add-header i').onclick = () => {
+  document.querySelector(".address-book-address-ad").classList.remove("active");
+
+}
+document.querySelector('.address-book-card-add-header i').onclick = () => {
+  document.querySelector(".address-book-card-add").classList.remove("active");
+
+}

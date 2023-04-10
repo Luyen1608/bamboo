@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -2578,7 +2576,7 @@
 .address-book-card-add-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .address-book-card-add-header p {
   margin: 0 auto;
@@ -2591,6 +2589,7 @@
   width: fit-content;
   padding: 0;
   color: #959ead;
+  visibility: visible;
   cursor: pointer;
   font-size: 14px;
 }
@@ -2694,6 +2693,7 @@
   padding: 0;
   font-size: 14px;
   color: #959ead;
+  visibility: visible;
   cursor: pointer;
 }
 .address-book-address-add .input-list {
@@ -3046,9 +3046,6 @@
     position: absolute;
     padding: 12px;
   }
-  .address-book-card-add.active {
-    top: 10%;
-  }
   .address-book-card-add > .d-flex {
     margin-bottom: 12px;
   }
@@ -3093,7 +3090,7 @@
     position: absolute;
   }
   .address-book-address-add.active {
-    top: 27%;
+    top: 20%;
   }
   .address-book-address-add-header h2 {
     font-size: 20px;
@@ -3342,6 +3339,7 @@
   .address-book-card-add {
     width: 430px;
     padding: 20px;
+    position: fixed;
   }
   .address-book-card-add > .d-flex {
     margin-bottom: 15px;
@@ -4610,10 +4608,6 @@ a:hover {
   width: calc(20% - 33px);
   position: relative;
 }
-.content .list-suggest .item {
-  width: calc(25% - 30px);
-  position: relative;
-}
 .content .list .item .sale {
   display: flex;
   justify-content: center;
@@ -5268,10 +5262,6 @@ a:hover {
   .content .list .item {
     width: calc(25% - 10px);
   }
-  .content .list-suggest .item {
-    width: calc(25% - 10px);
-    position: relative;
-  }
   .content .list .item img {
     max-height: 400px;
     object-fit: cover;
@@ -5473,11 +5463,6 @@ a:hover {
   .content .list .item {
     position: relative;
     width: calc(20% - 15px);
-    
-  }
-  .content .list-suggest .item {
-    width: calc(24% - 5px);
-    position: relative;
   }
   .content .list .item .name {
     font-size: 16px;
@@ -5526,10 +5511,6 @@ a:hover {
   .content .list .item {
     position: relative;
     width: calc(20% - 15px);
-  }
-  .content .list-suggest .item {
-    width: calc(24%);
-    position: relative;
   }
   .footer .logo-list {
     gap: 15px;

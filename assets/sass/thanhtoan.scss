@@ -279,7 +279,7 @@
   &-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     p {
       margin: 0 auto;
       font-weight: 700;
@@ -291,6 +291,7 @@
       width: fit-content;
       padding: 0;
       color: #959ead;
+      visibility: visible;
       cursor: pointer;
       font-size: 14px;
     }
@@ -397,6 +398,7 @@
       padding: 0;
       font-size: 14px;
       color: #959ead;
+      visibility: visible;
       cursor: pointer;
     }
   }
@@ -773,7 +775,6 @@
     position: absolute;
     padding: 12px;
     &.active{
-      top: 10%;
     }
     & > .d-flex {
       margin-bottom: 12px;
@@ -826,7 +827,7 @@
     padding: 10px;
     position: absolute;
     &.active{
-      top: 27%;
+      top: 20%;
     }
     &-header {
       h2 {
@@ -1103,6 +1104,7 @@
   .address-book-card-add {
     width: 430px;
     padding: 20px;
+    position: fixed;
     & > .d-flex {
       margin-bottom: 15px;
     }
