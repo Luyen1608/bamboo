@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="./assets/css/app.css" />
         <link rel="stylesheet" href="./assets/css/business.css" />
         <link rel="stylesheet" href="./assets/css/custom.css" />
+        <link rel="stylesheet" href="./assets/css/menu_style.css" />
     </head>
     <body onresize="checkSize()">
         <div class="wrapper">
@@ -519,6 +520,7 @@
         $( document ).ready(function() {
             checkSize();
         });
+        $("body").append("<ul class='nk-sticky-toolbar'><li class='demo-purchase' data-content='10'><a><img src='assets/img/cart-red.svg' alt=''></a></li></ul>");
     
     </script>
 </html>
