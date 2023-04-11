@@ -735,13 +735,16 @@
     padding: 10px 14px;
   }
   .shipping-list .shipping-item .shipping-name {
-    font-size: 16px;
+    font-size: 14px;
   }
   .shipping-list .shipping-item .price {
-    font-size: 16px;
+    font-size: 14px;
   }
   .shipping-list .shipping-item + .shipping-item {
     margin-top: 14px;
+  }
+  .shipping-list .shipping-item p {
+    font-size: 13px;
   }
   .address-book-card-add {
     width: 340px;
@@ -762,8 +765,8 @@
     margin-top: 14px;
   }
   .address-book-card-add .input-list {
-    gap: 12px;
-    margin-top: 15px;
+    gap: 8px;
+    margin-top: 8px;
   }
   .address-book-card-add .input-row p {
     font-size: 16px;
@@ -923,6 +926,9 @@
 }
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .cart-content .cart-table-footer {
+    padding: 15px 20px;
+  }
   .payment-info {
     width: 400px;
     padding: 30px 18px 25px;
@@ -1041,7 +1047,10 @@
   .address-book-card-add {
     width: 430px;
     padding: 20px;
-    position: fixed;
+    position: absolute;
+  }
+  .address-book-card-add.active {
+    top: 50%;
   }
   .address-book-card-add > .d-flex {
     margin-bottom: 15px;
@@ -1064,7 +1073,7 @@
     font-size: 18px;
   }
   .address-book-card-add .input-row input {
-    padding: 14px 20px 14px 24px;
+    padding: 10px 20px 10px 24px;
     font-size: 15px;
   }
   .address-book-card-add-actions {
@@ -1084,6 +1093,10 @@
   .address-book-address-add {
     width: 740px;
     padding: 20px;
+    position: absolute;
+  }
+  .address-book-address-add.active {
+    top: 32%;
   }
   .address-book-address-add-header h2 {
     font-size: 22px;
@@ -1163,13 +1176,13 @@
     margin-left: 10px;
   }
   .cart-content .cart-table-footer p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .cart-content .cart-table-footer .change {
-    font-size: 18px;
+    font-size: 16px;
   }
   .cart-content .cart-table-footer .price {
-    font-size: 16px;
+    font-size: 14px;
   }
   .cart-content .cart-table-heading .right {
     gap: 40px;
@@ -1412,16 +1425,16 @@
     margin-left: 10px;
   }
   .cart-content .cart-table-footer {
-    padding: 22px 18px;
+    padding: 10px 18px;
   }
   .cart-content .cart-table-footer p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .cart-content .cart-table-footer .change {
-    font-size: 18px;
+    font-size: 16px;
   }
   .cart-content .cart-table-footer .price {
-    font-size: 16px;
+    font-size: 14px;
   }
   .cart-content .cart-table-heading .right {
     gap: 45px;
@@ -1560,16 +1573,16 @@
     font-size: 15px;
   }
   .cart-content .cart-table-footer {
-    padding: 25px 20px;
+    padding: 15px 20px;
   }
   .cart-content .cart-table-footer p {
-    font-size: 18px;
+    font-size: 14px;
   }
   .cart-content .cart-table-footer .change {
-    font-size: 20px;
+    font-size: 16px;
   }
   .cart-content .cart-table-footer .price {
-    font-size: 18px;
+    font-size: 14px;
   }
   .cart-content-footer p {
     font-size: 19px;
