@@ -444,6 +444,7 @@ a:hover {
         &:hover {
           .lv2-sub-dropdown {
             opacity: 1;
+			z-index: 9999;
           }
         }
       }
