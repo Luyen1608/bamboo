@@ -10001,19 +10001,10 @@ h1 {
 }
 
 .comment-btn__item span {
-    padding-right: 18px;
+    padding-right: 10px;
     position: relative
 }
 
-.comment-btn__item span::before {
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #2f80ed;
-    content: '';
-    position: absolute;
-    top: 2.5px;
-    right: 0
-}
 
 .comment-label {
     font-size: 0;
@@ -11717,7 +11708,8 @@ input[name="fRName"].input-assess {
 /* rating */
 .top-comment-box-wrapper {
     padding-bottom: 12px;
-    border-bottom: 1px solid #e1e1e1;
+    padding-top: 12px;
+    /* border-bottom: 1px solid #e1e1e1; */
 }
 
 .top-comment-box-wrapper {
@@ -11725,16 +11717,18 @@ input[name="fRName"].input-assess {
     justify-content: flex-start;
     align-items: stretch;
 }
+
 .product-customer-content {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-    width: 320px;
+    width: 340px;
 }
+
 .rating-average {
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 130px auto;
     align-items: center;
     justify-content: center;
     grid-template-areas:
@@ -11743,12 +11737,14 @@ input[name="fRName"].input-assess {
     grid-column-gap: 10px;
     line-height: 1;
 }
+
 .point-comment-main {
     grid-area: point;
     font-size: 51px;
     color: #fe302e;
     font-weight: 600;
 }
+
 .ount-eval-comment-main {
     display: flex;
     justify-content: flex-start;
@@ -11767,9 +11763,11 @@ input[name="fRName"].input-assess {
 .star-on {
     color: var(--warning);
 }
+
 .rating-count {
     grid-area: rating;
 }
+
 .customer-rating {
     width: 100%;
     margin-bottom: 10px;
@@ -11786,6 +11784,7 @@ input[name="fRName"].input-assess {
     padding-left: 24px;
     border-left: 1px solid #e1e1e1;
 }
+
 .customer-rating h4 {
     font-weight: 400;
     font-size: 14px;
@@ -11795,6 +11794,7 @@ input[name="fRName"].input-assess {
     position: relative;
     display: none;
 }
+
 .customer-button {
     font-size: 15px;
     text-align: center;
@@ -11809,6 +11809,7 @@ input[name="fRName"].input-assess {
     padding: 10px 20px;
     transition: background-color .3s ease-in-out;
 }
+
 .rating-star-item {
     width: 16px;
     min-width: 16px;
@@ -11823,7 +11824,110 @@ input[name="fRName"].input-assess {
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
 }
+
 .ount-eval-comment-main .rating-star-item {
     width: 16px;
     height: 16px;
+}
+
+.fa-star.checked {
+    color: orange;
+}
+
+.fa-star.checked-off {
+    color: #919090;
+}
+.fa-star {
+    font-size: 14pt;
+    color: #919090;
+}
+
+.customer-button:hover {
+    background-color: #1959b0;
+}
+
+.customer-button {
+    font-size: 15px;
+    text-align: center;
+    background: #2f80ed;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    border-radius: 4px;
+    min-width: 230px;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 10px 20px;
+    transition: background-color .3s ease-in-out;
+}
+
+.customer-rating h4 {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #4a4a4a;
+    margin: 0 12px 0 0;
+    position: relative;
+    display: none;
+}
+
+#comment_reply_wrapper {
+    margin: 15px auto;
+    clear: both;
+    padding: 15px;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+[data-id=comment-box-form] input,
+[data-id=comment-box-form] textarea {
+    border: 1px solid #d1d1d1;
+    color: #555;
+}
+
+.your-comment {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+[data-id=comment-box-form] input[type=text] {
+    padding: 3px 7px;
+    margin: 10px 15px 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #555;
+    height: 36px;
+    width: 100%;
+    padding: 7px 8px;
+}
+
+.custormer-info {
+    padding-bottom: 7px;
+}
+
+[data-id=comment-box-form] input[type=text]+span {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #999;
+}
+
+.comment-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+[data-id=comment-box-form] .add-comment {
+    background: #38b5df;
+    border-radius: 3px;
+    border: 1px solid #38b5df;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 0 0 7px;
+    line-height: 40px;
 }
