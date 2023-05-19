@@ -1129,7 +1129,6 @@ textarea {
 
 [class^="iconfeed-"],
 [class*="iconfeed-"] {
-    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/icon_global.webp);
     background-repeat: no-repeat;
     display: inline-block;
     width: 75px;
@@ -1164,7 +1163,6 @@ textarea {
 
 [class^="iconratingnew-"],
 [class*="iconratingnew-"] {
-    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/icon-comment.webp);
     background-repeat: no-repeat;
     display: inline-block;
     height: 30px;
@@ -1246,9 +1244,6 @@ textarea {
 }
 
 [class^="iconlogo-"].visible,
-[class*="iconlogo-"].visible {
-    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp)
-}
 
 .iconlogo-fashion {
     background-position: -85px -29px
@@ -3538,7 +3533,6 @@ textarea {
 
 [class^="icon-"],
 [class*="icon-"] {
-    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/icon_common.22122021@2x.webp);
     background-repeat: no-repeat;
     display: inline-block;
     height: 30px;
@@ -4048,7 +4042,6 @@ textarea {
 
 [class^="iconnewglobal-"],
 [class*="iconnewglobal-"] {
-    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/iconnew.webp);
     background-repeat: no-repeat;
     display: inline-block;
     height: 30px;
@@ -5810,7 +5803,6 @@ a.imgzalo {
 }
 
 #status-icon:before {
-    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/chat.webp);
     background-size: 38px 38px;
     content: '';
     position: absolute
@@ -6882,7 +6874,6 @@ body.dmx-site #loader:before {
 
 [class^="icondetail-"],
 [class*="icondetail-"] {
-    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/TGDD/Mobile/icon_chitiet@2x-min.png?v=2);
     background-repeat: no-repeat;
     display: inline-block;
     height: 30px;
