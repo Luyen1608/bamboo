@@ -3531,7 +3531,7 @@ textarea {
     vertical-align: middle
 }
 
-[class^="icon-"],
+/* [class^="icon-"],
 [class*="icon-"] {
     background-repeat: no-repeat;
     display: inline-block;
@@ -3540,7 +3540,7 @@ textarea {
     line-height: 30px;
     vertical-align: middle;
     background-size: 300px 280px
-}
+} */
 
 .icon-close {
     background-position: -241px -231px;
