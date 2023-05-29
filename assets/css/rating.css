@@ -11823,6 +11823,7 @@ input[name="fRName"].input-assess {
 .fa-star.checked-off {
     color: #919090;
 }
+
 .fa-star {
     font-size: 14pt;
     color: #919090;
@@ -11916,4 +11917,11 @@ input[name="fRName"].input-assess {
     text-align: center;
     margin: 0 0 0 7px;
     line-height: 40px;
+}
+
+@media screen and (max-width: 640px) {
+    .top-comment-box-wrapper {
+        display: grid;
+        gap: 10px;
+    }
 }
