@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
-  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
   <link rel="stylesheet" href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css" />
   <script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
@@ -37,7 +37,7 @@
 
 </head>
 
-<body onresize="checkSize()">
+<body>
   <div class="wrapper business-3">
     <div class="pre-header">
       <div class="container-al p-content">
@@ -795,19 +795,6 @@
 <script src="../../assets/js/menu_style.js"></script>
 <link rel="stylesheet" href="../../assets/css/menu_style.css">
 <script type="text/javascript">
-  $(".pr-slider").slick({
-    dots: true,
-    prevArrow:
-      '<a class="slick-prev" href="#"> <i class="fa-solid fa-chevron-left"></i></a>',
-    nextArrow:
-      '<a class="slick-next" href="#"> <i class="fa-solid fa-chevron-right"></i></a>',
-    customPaging: function (slick, index) {
-      var targetImage = slick.$slides.eq(index).find("img").attr("src");
-      return '<img src=" ' + targetImage + ' "/>';
-    },
-  });
-</script>
-<script type="text/javascript">
   $(".filter-btn").on("click", function (e) {
     $(".collection-filter").css("left", "-15px");
   });
@@ -856,5 +843,6 @@
 
   }
 </style>
+
 
 </html>
