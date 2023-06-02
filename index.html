@@ -444,7 +444,7 @@
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item 123">
               <a href="#"><img src="./assets/img/item1.png" alt="" /></a>
               <div class="info">
                 <div class="name">(3 loại sử dụng dụng</div>
@@ -1186,9 +1186,18 @@
 
   var witem = $('.content .list .item a:first-child').width();
   $('.content .list .item a:first-child').css("height", witem);
-
+  const items1 = document.querySelectorAll(".list .item:nth-child(5n)");
+  items1.forEach((item) => {
+    item.classList.remove("width-100");
+  });
 </script>
 <style>
+  @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .content .list {
+      justify-content: flex-start;
+    }
+  }
+
   .slider .item img {
     border-radius: 10px;
     height: 100%;
