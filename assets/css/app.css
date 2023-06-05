@@ -1549,7 +1549,7 @@
   transition: 0.2s;
 }
 .cart-content .cart-detail-content.active {
-  max-height: 500px;
+  max-height: fit-content;
 }
 .cart-content .cart-detail .cart-detail-row {
   padding: 19px 0;
