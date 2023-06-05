@@ -672,7 +672,7 @@
   padding: 7px 27px;
   border-radius: 8px;
   border: 1px solid #dddfe3;
-  max-width: 104px;
+  /* max-width: 104px; */
   display: inline-block;
   cursor: pointer;
   transition: 0.2s;
